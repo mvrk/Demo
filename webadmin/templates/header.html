@@ -32,10 +32,10 @@
                     </div>
                     <ul>
                     {% if not user.is_superuser %}
-                        <li><a href="{% url studentprofile %}">详细信息</a></li>
+                        <li><a href="{% url studentprofile %}">Detail info</a></li>
                     {% endif %}
-                        <li><div id="change-password" style="display:inline"><a href="dashboard.html#">修改密码</a></div></li>
-                        <li><a href="{% url userlogout %}">退出</a></li>
+                        <li><div id="change-password" style="display:inline"><a href="dashboard.html#">Edit password</a></div></li>
+                        <li><a href="{% url userlogout %}">Logout</a></li>
                     </ul>
                 </div>
             </div>

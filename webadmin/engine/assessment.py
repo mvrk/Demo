@@ -21,7 +21,7 @@ def index(request):
     username = request.user.username
 
     return render_to_response('assessment/assessment.html',{
-            "title":'互评管理',
+            "title":'mutual evaluation management',
             'username':username},context_instance = RequestContext(request))
             
 @login_required
@@ -67,9 +67,9 @@ def addassessment(request):
         if form.is_valid():
             form.save()
             success = True
-            successinfo = "添加"
+            successinfo = "Add"
             return render_to_response('assessment/assessment.html',{
-                "title":'互评管理',
+                "title":'mutual evaluation management',
                 'form':form,
                 'successinfo':successinfo,
                 'success':success,
@@ -77,7 +77,7 @@ def addassessment(request):
         else:
             print form.errors
             return render_to_response('assessment/assessment.html',{
-                "title":'互评管理',
+                "title":'mutual evaluation management',
                 'form':form,
                 'username':username},context_instance = RequestContext(request))
 
@@ -92,16 +92,16 @@ def editassessment(request):
         if form.is_valid():
             form.update()
             success = True
-            successinfo = "修改"
+            successinfo = "Edit"
             return render_to_response('assessment/assessment.html',{
-                "title":'互评管理',
+                "title":'mutual evaluation management',
                 'form':form,
                 'successinfo':successinfo,
                 'success':success,
                 'username':username},context_instance = RequestContext(request))
         else:
             return render_to_response('assessment/assessment.html',{
-                "title":'互评管理',
+                "title":'mutual evaluation management',
                 'form':form,
                 'username':username},context_instance = RequestContext(request))
 
@@ -118,9 +118,9 @@ def deleteassessment(request):
                 delassessment = Assessment.objects.get(id = assessment_id)
                 delassessment.delete()
                 success = True
-                successinfo = "删除"
+                successinfo = "Delete"
                 return render_to_response('assessment/assessment.html',{
-                    "title":'互评管理',
+                    "title":'mutual evaluation management',
                     'successinfo':successinfo,
                     'success':success,
                     'username':username},context_instance = RequestContext(request))
@@ -136,7 +136,7 @@ def viewassessment(request):
     username = request.user.username
     
     return render_to_response('assessment/viewassessments.html',{
-            "title":'查看互评',
+            "title":'View evaluation',
             'username':username},context_instance = RequestContext(request))
 
 @login_required
@@ -188,7 +188,7 @@ def goassessment(request):
     username = request.user.username
 
     return render_to_response('assessment/goassessment.html',{
-            "title":'进行互评',
+            "title":'mutual evaluate',
             'username':username},context_instance = RequestContext(request))
 
 @login_required
@@ -270,7 +270,7 @@ def go_assessments(request):
             
             assessmentrow = AssessmentRow.objects.get(student=User.objects.get(username = username).student)
 
-            if result.encode('utf-8') == "优":
+            if result.encode('utf-8') == "A":
                 assessment = Assessment.objects.get(term=term.encode('utf-8'))
                 if hasresults < assessment.excellent*studentnum/100 + 1:
                     assessmentrecord.result = dict([[i[1],i[0]] for i in EVALUATE_CHOICES])[result.encode('utf-8')]
@@ -279,7 +279,7 @@ def go_assessments(request):
                 else:
                     response = 'false'
                     response_num = assessment.excellent*studentnum/100 + 1
-            elif result.encode('utf-8') == "良":
+            elif result.encode('utf-8') == "B":
                 assessment = Assessment.objects.get(term=term.encode('utf-8'))
                 if hasresults < assessment.good*studentnum/100 + 1:
                     assessmentrecord.result = dict([[i[1],i[0]] for i in EVALUATE_CHOICES])[result.encode('utf-8')]
@@ -288,7 +288,7 @@ def go_assessments(request):
                 else:
                     response = 'false'
                     response_num = assessment.good*studentnum/100 + 1
-            elif result.encode('utf-8') == "中":
+            elif result.encode('utf-8') == "C":
                 assessment = Assessment.objects.get(term=term.encode('utf-8'))
                 if hasresults <= (studentnum - assessment.excellent*studentnum/100 - 2 - assessment.good*studentnum/100):
                     assessmentrecord.result = dict([[i[1],i[0]] for i in EVALUATE_CHOICES])[result.encode('utf-8')]

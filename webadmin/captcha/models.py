@@ -63,4 +63,4 @@ class CaptchaStore(models.Model):
     remove_expired = classmethod(remove_expired)
     
     class Meta:
-        verbose_name_plural = '验证码'
+        verbose_name_plural = 'Validation code'

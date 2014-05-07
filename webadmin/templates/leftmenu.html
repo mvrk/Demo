@@ -17,50 +17,50 @@
             <div id="mws-navigation">
                 <ul>
                     {% if user.is_superuser %}
-                    <li><a href="{% url manageclass %}"><i class="icol32-group"></i>班级管理</a></li>
-                    <li><a href="{% url managestudent %}"><i class="icol32-user-green"></i>同学管理</a></li>
-                    <li><a href="{% url manageassessment %}"><i class="icol32-group-edit"></i>互评管理</a>
+                    <li><a href="{% url manageclass %}"><i class="icol32-group"></i>Class Management</a></li>
+                    <li><a href="{% url managestudent %}"><i class="icol32-user-green"></i>Student Management</a></li>
+                    <li><a href="{% url manageassessment %}"><i class="icol32-group-edit"></i>Mutual Evaluation Management</a>
                         <ul>
-                            <li><a href="{% url viewassessment %}">查看互评</a></li>
-                            <li><a href="{% url manageassessment %}">互评设置</a></li>
+                            <li><a href="{% url viewassessment %}">Look up evaluation</a></li>
+                            <li><a href="{% url manageassessment %}">configration</a></li>
                         </ul>
                     </li>
                     {% endif %}
                     {% if not user.is_superuser %}
-                    <li><a href="{% url manageassessment %}"><i class="icol32-group-edit"></i>互评管理</a>
+                    <li><a href="{% url manageassessment %}"><i class="icol32-group-edit"></i>Mutual Evaluation Management</a>
                         <ul>
                             {% go_assess %}
-                            <li><a href="{% url viewassessment %}">我的互评</a></li>
+                            <li><a href="{% url viewassessment %}">My Mutual Evaluation</a></li>
                         </ul>
                     </li>
                     {% endif %}
-                    <li><a href="{% url managegrades %}"><i class="icol32-document-prepare"></i>成绩管理</a>
+                    <li><a href="{% url managegrades %}"><i class="icol32-document-prepare"></i>GPA management</a>
                         <ul>
                             {% if user.is_superuser %}
-                                <li><a href="{% url importgrades %}">导入成绩单</a></li>
+                                <li><a href="{% url importgrades %}">Import score</a></li>
                             {% endif %}
-                            <li><a href="{% url classgrades %}">班级成绩</a></li>
-                            <li><a href="{% url managegrades %}">同学成绩</a></li>
+                            <li><a href="{% url classgrades %}">Class GPA</a></li>
+                            <li><a href="{% url managegrades %}">Student GPA</a></li>
                         </ul>
                     </li>
                     {% if user.is_superuser %}
-                    <li><a href="{% url behavior %}"><i class="icol32-sport-soccer"></i>活动管理</a>
+                    <li><a href="{% url behavior %}"><i class="icol32-sport-soccer"></i>Activation management</a>
                         <ul>
-                            <li><a href="{% url behavior %}">日常行为活动</a></li>
-                            <li><a href="{% url development %}">个性发展活动</a></li>
+                            <li><a href="{% url behavior %}">Daily Behavior</a></li>
+                            <li><a href="{% url development %}">Interest development</a></li>
                         </ul>
                     </li>
                     {% endif %}
                     <li>
-                        <a href=""><i class="icol32-document-quote"></i>综合测评管理</a>
+                        <a href=""><i class="icol32-document-quote"></i>General assessment management</a>
                         <ul>
                             {% if user.is_superuser %}
-                                <li><a href="{% url comperformance_setup %}">综合测评设置</a></li>
-                                <li><a href="{% url comperformance %}">综合测评-同学</a></li>
+                                <li><a href="{% url comperformance_setup %}">General assessment configuration</a></li>
+                                <li><a href="{% url comperformance %}">General-class</a></li>
                             {% endif %}
-                            <li><a href="{% url classcomperformances %}">综合测评-班级</a></li>
+                            <li><a href="{% url classcomperformances %}">General-student</a></li>
                             {% if not user.is_superuser %}
-                                <li><a href="{% url studentcomperformance %}">查看综合-同学</a></li>
+                                <li><a href="{% url studentcomperformance %}">Look up general student</a></li>
                             {% endif %}
                         </ul>
                     </li>

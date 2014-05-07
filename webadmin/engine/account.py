@@ -38,6 +38,6 @@ def changepassword(request):
         form = password_change_form(user=request.user)
 
     return render_to_response('index.html',{
-            "title":'主页',
+            "title":'Homepage',
             'username':user.username,
             'form':form},context_instance = RequestContext(request))

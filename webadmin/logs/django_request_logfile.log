@@ -1,0 +1,684 @@
+WARNING 2014-05-08 02:55:55 /home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/core/handlers/base.py base 142 Not Found: /adnub status_code:404
+ERROR 2014-05-08 02:56:01 /home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/core/handlers/base.py base 215 Internal Server Error: /admin/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/defaulttags.py", line 1033, in load
+    (name, taglib))
+TemplateSyntaxError: 'firstof' is not a valid tag or filter in tag library 'future'
+ERROR 2014-05-08 02:56:02 /home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/core/handlers/base.py base 215 Internal Server Error: /admin/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/defaulttags.py", line 1033, in load
+    (name, taglib))
+TemplateSyntaxError: 'firstof' is not a valid tag or filter in tag library 'future'
+WARNING 2014-05-08 02:56:17 /home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/core/handlers/base.py base 142 Not Found: /grappelli status_code:404
+ERROR 2014-05-08 03:49:50 /home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/core/handlers/base.py base 215 Internal Server Error: /admin/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/defaulttags.py", line 1033, in load
+    (name, taglib))
+TemplateSyntaxError: 'firstof' is not a valid tag or filter in tag library 'future'
+ERROR 2014-05-08 03:49:50 /home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/core/handlers/base.py base 215 Internal Server Error: /admin/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/defaulttags.py", line 1033, in load
+    (name, taglib))
+TemplateSyntaxError: 'firstof' is not a valid tag or filter in tag library 'future'
+WARNING 2014-05-08 03:51:45 /home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/core/handlers/base.py base 142 Not Found: /accounts/comperformance/select status_code:404
+ERROR 2014-05-08 03:52:15 /home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/core/handlers/base.py base 215 Internal Server Error: /admin/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/Django-1.4.5-py2.6.egg/django/template/defaulttags.py", line 1033, in load
+    (name, taglib))
+TemplateSyntaxError: 'firstof' is not a valid tag or filter in tag library 'future'
+ERROR 2014-05-08 04:32:44 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /accounts/login/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/ComPerformance/webadmin/engine/account.py", line 28, in userlogin
+    'captcha':captcha},context_instance = RequestContext(request))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/shortcuts/__init__.py", line 20, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader.py", line 176, in render_to_string
+    return t.render(context_instance)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'user-login' with arguments '()' and keyword arguments '{}' not found.
+ERROR 2014-05-08 04:56:08 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /accounts/login/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py", line 101, in get_response
+    request.path_info)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 300, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 209, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/ComPerformance/webadmin/engine/account.py", line 8, in <module>
+    from forms import LoginForm,ChangePasswordForm
+  File "/home/alex/ComPerformance/webadmin/engine/forms.py", line 147
+     except Student.D
+                    ^
+ SyntaxError: invalid syntax
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /jquery.ui.base.css status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /jquery.ui.theme.css status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /jquery.ui.core.css status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /jquery.ui.accordion.css status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /jquery.ui.autocomplete.css status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /jquery.ui.button.css status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /jquery.ui.datepicker.css status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /jquery.ui.dialog.css status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /jquery.ui.progressbar.css status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /jquery.ui.menu.css status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /jquery.ui.resizable.css status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /jquery.ui.selectable.css status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /jquery.ui.slider.css status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /jquery.ui.spinner.css status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /jquery.ui.tabs.css status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /LKf8nhXsWg5ybwEGXk8UBQ.woff status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /fonts/icomoon.svg status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /PIPMHY90P7jtyjpXuZ2cLD8E0i7KZn-EPnyo3HZu7kw.woff status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /images/core/mws-dark-bg.png status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /images/core/mws-header-bg.png status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /images/core/bg/paper.png status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /images/core/mws-sidebar-stitch.png status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /fonts/icomoon.woff status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /images/core/mws-panel-header-bg.png status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /icol32/group.png status_code:404
+WARNING 2014-05-08 05:01:18 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /icol32/document_quote.png status_code:404
+WARNING 2014-05-08 05:01:19 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /icol32/sport_soccer.png status_code:404
+WARNING 2014-05-08 05:01:19 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /icol32/document_prepare.png status_code:404
+WARNING 2014-05-08 05:01:19 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /icol32/group_edit.png status_code:404
+WARNING 2014-05-08 05:01:19 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /fonts/icomoon.ttf status_code:404
+WARNING 2014-05-08 05:01:19 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /icol32/user_green.png status_code:404
+WARNING 2014-05-08 05:02:23 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /images/core/bg/pape.png status_code:404
+WARNING 2014-05-08 05:02:24 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /images/core/bg/pap.png status_code:404
+WARNING 2014-05-08 05:02:24 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /images/core/bg/p.png status_code:404
+WARNING 2014-05-08 05:02:25 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 142 Not Found: /images/core/bg/.png status_code:404
+ERROR 2014-05-08 05:03:30 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /admin/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/defaulttags.py", line 1033, in load
+    (name, taglib))
+TemplateSyntaxError: 'firstof' is not a valid tag or filter in tag library 'future'
+ERROR 2014-05-08 05:16:51 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: / status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/ComPerformance/webadmin/engine/views.py", line 14, in index
+    'username':username},context_instance = RequestContext(request))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/shortcuts/__init__.py", line 20, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader.py", line 176, in render_to_string
+    return t.render(context_instance)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return self.render_template(self.template, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader_tags.py", line 137, in render_template
+    output = template.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/ComPerformance/webadmin/engine/assessment.py", line 310
+     assessmentrow.save() return HttpResponse(simplejson.dumps([response]), mimetype='application/json')
+                               ^
+ SyntaxError: invalid syntax
+ERROR 2014-05-08 05:16:51 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: / status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/ComPerformance/webadmin/engine/views.py", line 14, in index
+    'username':username},context_instance = RequestContext(request))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/shortcuts/__init__.py", line 20, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader.py", line 176, in render_to_string
+    return t.render(context_instance)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return self.render_template(self.template, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader_tags.py", line 137, in render_template
+    output = template.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/ComPerformance/webadmin/engine/assessment.py", line 310
+     assessmentrow.save() return HttpResponse(simplejson.dumps([response]), mimetype='application/json')
+                               ^
+ SyntaxError: invalid syntax
+ERROR 2014-05-08 05:16:51 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /manage/classcomperformances/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/ComPerformance/webadmin/engine/comperformance.py", line 286, in classcomperformances
+    'username':username},context_instance = RequestContext(request))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/shortcuts/__init__.py", line 20, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader.py", line 176, in render_to_string
+    return t.render(context_instance)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return self.render_template(self.template, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader_tags.py", line 137, in render_template
+    output = template.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/ComPerformance/webadmin/engine/assessment.py", line 310
+     assessmentrow.save() return HttpResponse(simplejson.dumps([response]), mimetype='application/json')
+                               ^
+ SyntaxError: invalid syntax
+ERROR 2014-05-08 05:18:25 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /manage/classcomperformances/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/ComPerformance/webadmin/engine/comperformance.py", line 286, in classcomperformances
+    'username':username},context_instance = RequestContext(request))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/shortcuts/__init__.py", line 20, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader.py", line 176, in render_to_string
+    return t.render(context_instance)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return self.render_template(self.template, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader_tags.py", line 137, in render_template
+    output = template.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/ComPerformance/webadmin/engine/assessment.py", line 310
+     assessmentrow.save() return HttpResponse(simplejson.dumps([response]), mimetype='application/json')
+                               ^
+ SyntaxError: invalid syntax
+ERROR 2014-05-08 05:18:29 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /manage/student/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/ComPerformance/webadmin/engine/student.py", line 22, in index
+    'username':username},context_instance = RequestContext(request))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/shortcuts/__init__.py", line 20, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader.py", line 176, in render_to_string
+    return t.render(context_instance)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return self.render_template(self.template, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/loader_tags.py", line 137, in render_template
+    output = template.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/ComPerformance/webadmin/engine/assessment.py", line 310
+     assessmentrow.save() return HttpResponse(simplejson.dumps([response]), mimetype='application/json')
+                               ^
+ SyntaxError: invalid syntax
+ERROR 2014-05-08 05:38:28 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /manage/addclass/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/ComPerformance/webadmin/engine/class.py", line 66, in addclass
+    form.save()
+  File "/home/alex/ComPerformance/webadmin/engine/forms.py", line 124, in save
+    newclass.save()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/db/models/base.py", line 551, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/db/models/manager.py", line 203, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/db/models/query.py", line 1593, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 912, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/MySQL_python-1.2.5-py2.6-linux-x86_64.egg/MySQLdb/cursors.py", line 207, in execute
+    if not self._defer_warnings: self._warning_check()
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/MySQL_python-1.2.5-py2.6-linux-x86_64.egg/MySQLdb/cursors.py", line 117, in _warning_check
+    warn(w[-1], self.Warning, 3)
+Warning: Incorrect string value: '\xE8\xAE\xA1\xE7\xAE\x97...' for column 'classname' at row 1
+ERROR 2014-05-08 05:57:17 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /ajax/view_assessments_list/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/ComPerformance/webadmin/engine/assessment.py", line 169, in view_assessments_list
+    assessmentrows = assessmentrows[startRecord:endRecord]
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/db/models/query.py", line 174, in __getitem__
+    "Negative indexing is not supported."
+AssertionError: Negative indexing is not supported.
+ERROR 2014-05-08 05:57:38 /home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /ajax/view_assessments_list/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/ComPerformance/webadmin/engine/assessment.py", line 169, in view_assessments_list
+    assessmentrows = assessmentrows[startRecord:endRecord]
+  File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/db/models/query.py", line 174, in __getitem__
+    "Negative indexing is not supported."
+AssertionError: Negative indexing is not supported.

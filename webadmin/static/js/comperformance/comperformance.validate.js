@@ -82,21 +82,21 @@
                 },
                 messages:{
                     username:{
-                        required:"用户名必须要填(学生:您的学号,管理员:6-12位,由字母数字下划线组成,首字母为字母)",
-                        minlength:"管理员用户名至少为6位",
-                        maxlength:"管理员用户名至多为12位",
-                        username:'学生:您的学号,管理员:6-12位,由字母数字下划线组成,首字母为字母',
+                        required:"Required(Student: Your student ID; Admin:6-12 digits, Must start with letters, valid symbols: letters, numbers and underscore.)",
+                        minlength:"Minimum 6 digits",
+                        maxlength:"Maximum 12 digits",
+                        username:'Student: Your student ID; Admin:6-12 digits, Must start with letters, valid symbols: letters, numbers and underscore.'
                     },
                     password:{
-                        required:"密码必须要填(由字母数字下划线组成的字符串，最少为6位)", 
-                        minlength:"密码至少为6位",
-                        maxlength:"密码至多为12位",
-                        password:"密码由字母数字下划线组成的字符串，最少为6位",
+                        required:"Required, 6-12 digits, valid symbols: letters, numbers and underscore.)",
+                        minlength:"Minimum 6 digits",
+                        maxlength:"Maximum 12 digits",
+                        password:"6-12 digits, valid symbols: letters, numbers and underscore."
                     },
                     captcha_1:{
-                        required:"验证码必须要填",  
-                        remote:"输入验证码错误",
-                    },
+                        required:"Required",
+                        remote:"Wrong answer"
+                    }
                 },
                 invalidHandler: function(form, validator) {
                     if($.fn.effect) {

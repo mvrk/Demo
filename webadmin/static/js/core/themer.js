@@ -9,7 +9,7 @@
  
 (function($) {
 	$(document).ready(function() {
-		var backgroundPattern = "images/core/bg/paper.png";
+		var backgroundPattern = "images/core/bg/mozaic.png";
 		var baseColor = "#35353a";
 		var highlightColor = "#c5d52b";
 		var textColor = "#c5d52b";

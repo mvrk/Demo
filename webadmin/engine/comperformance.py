@@ -125,7 +125,7 @@ def deletecomperformance_setup(request):
                 delcomperformance_setup = Comperformance.objects.get(id = comperformance_setup_id)
                 delcomperformance_setup.delete()
                 success = True
-                successinfo = "删除"
+                successinfo = "Delete"
                 return render_to_response('comperformance/comperformance_setup.html',{
                     "title":'综合测评设置',
                     'successinfo':successinfo,

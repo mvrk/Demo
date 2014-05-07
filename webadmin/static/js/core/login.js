@@ -11,7 +11,7 @@
 	$(document).ready(function() {	
 		$("#mws-login-form form").validate({
 			rules: {
-				username: {required: true}, 
+				username: {required: true},
 				password: {required: true}
 			}, 
 			errorPlacement: function(error, element) {  

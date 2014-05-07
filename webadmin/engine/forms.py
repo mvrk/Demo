@@ -16,7 +16,7 @@ import traceback
 class LoginForm(forms.Form):
     username = UsernameField(required=True,max_length=12,min_length=6)
     password = PasswordField(required=True,max_length=12,min_length=6)
-    captcha = CaptchaField(required=True,error_messages={'invalid':u"您输入的验证码不正确"})
+    captcha = CaptchaField(required=True,error_messages={'invalid':u"Wrong answer"})
 
     def __init__(self, request=None, *args, **kwargs):
         self.request = request
@@ -31,9 +31,9 @@ class LoginForm(forms.Form):
             self.user_cache = authenticate(username=username, password=password)
             #如果成功返回对应的User对象，否则返回None(只是判断此用户是否存在，不判断是否is_active或者is_staff)
             if self.user_cache is None:
-                raise forms.ValidationError(u"您输入的用户名或密码不正确!")
+                raise forms.ValidationError(u"Invalid account or password")
             elif not self.user_cache.is_active or not self.user_cache.is_staff:
-                raise forms.ValidationError(u"您输入的用户名或密码不正确!")
+                raise forms.ValidationError(u"Invalid account or password")
             else:
                 login(self.request,self.user_cache)
         return self.cleaned_data
