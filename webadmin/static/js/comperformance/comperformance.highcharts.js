@@ -13,11 +13,11 @@ $(function () {
                     marginBottom: 25
                 },
                 title: {
-                    text: '班级成绩查看',
+                    text: 'ClassGPA查看',
                     x: -20 //center
                 },
                 subtitle: {
-                    text: '比较各班成绩平均分',
+                    text: '比较各班GPA平均分',
                     x: -20
                 },
                 xAxis: {
@@ -63,11 +63,11 @@ $(function () {
                     marginBottom: 25
                 },
                 title: {
-                    text: '班级综合成绩查看',
+                    text: 'Class综合GPA查看',
                     x: -20 //center
                 },
                 subtitle: {
-                    text: '比较各班综合成绩平均分',
+                    text: '比较各班综合GPA平均分',
                     x: -20
                 },
                 xAxis: {
@@ -75,7 +75,7 @@ $(function () {
                 },
                 yAxis: {
                     title: {
-                        text: '综合成绩平均分'
+                        text: '综合GPA平均分'
                     },
                     plotLines: [{
                         value: 0,

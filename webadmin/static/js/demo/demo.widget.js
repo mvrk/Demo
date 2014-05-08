@@ -3,7 +3,7 @@
  * This file is part of MWS Admin, an Admin template build for sale at ThemeForest.
  * All copyright to this file is hold by Mairel Theafila <maimairel@yahoo.com> a.k.a nagaemas on ThemeForest.
  * Last Updated:
- * December 08, 2012
+ * December 08, 2014
  *
  */
 

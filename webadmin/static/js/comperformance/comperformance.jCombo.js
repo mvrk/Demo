@@ -2,11 +2,11 @@
 
     $(document).ready(function() {
         $("#studentaddclass").jCombo("/ajax/select_classes/",{
-            initial_text:'-- 请选择 --',
+            initial_text:'-- Please Select --',
         });
 
         $("#editstudentaddclass").jCombo("/ajax/select_classes/",{
-            initial_text:'-- 请选择 --',
+            initial_text:'-- Please Select --',
         });
     });
 

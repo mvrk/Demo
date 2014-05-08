@@ -17,7 +17,7 @@ def index(request):
     username = request.user.username
 
     return render_to_response('class/class.html',{
-            "title":'班级管理',
+            "title":'Class Management',
             'username':username},context_instance = RequestContext(request))
 
 @login_required
@@ -65,16 +65,16 @@ def addclass(request):
         if form.is_valid():
             form.save()
             success = True
-            successinfo = "添加"
+            successinfo = "Add"
             return render_to_response('class/class.html',{
-                "title":'班级管理',
+                "title":'Class Management',
                 'form':form,
                 'successinfo':successinfo,
                 'success':success,
                 'username':username},context_instance = RequestContext(request))
         else:
             return render_to_response('class/class.html',{
-                "title":'班级管理',
+                "title":'Class Management',
                 'form':form,
                 'username':username},context_instance = RequestContext(request))
 
@@ -89,16 +89,16 @@ def editclass(request):
         if form.is_valid():
             form.update()
             success = True
-            successinfo = "修改"
+            successinfo = "Edit"
             return render_to_response('class/class.html',{
-                "title":'班级管理',
+                "title":'Class Management',
                 'form':form,
                 'successinfo':successinfo,
                 'success':success,
                 'username':username},context_instance = RequestContext(request))
         else:
             return render_to_response('class/class.html',{
-                "title":'班级管理',
+                "title":'Class Management',
                 'form':form,
                 'username':username},context_instance = RequestContext(request))
 
@@ -115,9 +115,9 @@ def deleteclass(request):
                 delclass = Class.objects.get(id = class_id)
                 delclass.delete()
                 success = True
-                successinfo = "删除"
+                successinfo = "Delete"
                 return render_to_response('class/class.html',{
-                    "title":'班级管理',
+                    "title":'Class Management',
                     'successinfo':successinfo,
                     'success':success,
                     'username':username},context_instance = RequestContext(request))

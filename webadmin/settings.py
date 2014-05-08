@@ -9,7 +9,7 @@ TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
-    ('guomeng', 'gnemoug@gmail.com'),
+    ('alex', 'guojiarui@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -32,11 +32,11 @@ DATABASES = {
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'Asia/Shanghai'
+TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'zh-CN'
+LANGUAGE_CODE = 'en-us'
 
 SITE_ID = 1
 
@@ -230,4 +230,4 @@ LOGGING = {
         },
     },
 }
-GRAPPELLI_ADMIN_TITLE="<a href='/'>综合成绩管理系统</a>"
+GRAPPELLI_ADMIN_TITLE="<a href='/'>Performance Evaluation System</a>"

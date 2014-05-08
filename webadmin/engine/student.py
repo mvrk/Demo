@@ -18,7 +18,7 @@ def index(request):
     username = request.user.username
 
     return render_to_response('student/student.html',{
-            "title":'同学管理',
+            "title":'StudentManagement',
             'username':username},context_instance = RequestContext(request))
 
 @login_required
@@ -80,16 +80,16 @@ def addstudent(request):
         if form.is_valid():
             form.save()
             success = True
-            successinfo = "添加"
+            successinfo = "Add"
             return render_to_response('student/student.html',{
-                "title":'同学管理',
+                "title":'StudentManagement',
                 'form':form,
                 'successinfo':successinfo,
                 'success':success,
                 'username':username},context_instance = RequestContext(request))
         else:
             return render_to_response('student/student.html',{
-                "title":'同学管理',
+                "title":'StudentManagement',
                 'form':form,
                 'username':username},context_instance = RequestContext(request))
 
@@ -104,16 +104,16 @@ def editstudent(request):
         if form.is_valid():
             form.update()
             success = True
-            successinfo = "修改"
+            successinfo = "Edit"
             return render_to_response('student/student.html',{
-                "title":'同学管理',
+                "title":'StudentManagement',
                 'form':form,
                 'successinfo':successinfo,
                 'success':success,
                 'username':username},context_instance = RequestContext(request))
         else:
             return render_to_response('student/student.html',{
-                "title":'同学管理',
+                "title":'StudentManagement',
                 'form':form,
                 'username':username},context_instance = RequestContext(request))
 
@@ -132,9 +132,9 @@ def deletestudent(request):
                 delstudent.delete()
                 deluser.delete()
                 success = True
-                successinfo = "删除"
+                successinfo = "Delete"
                 return render_to_response('student/student.html',{
-                    "title":'同学管理',
+                    "title":'StudentManagement',
                     'successinfo':successinfo,
                     'success':success,
                     'username':username},context_instance = RequestContext(request))
@@ -158,9 +158,9 @@ def initstudent(request):
                 user.set_password('000000')
                 user.save()
                 success = True
-                successinfo = "初始化密码"
+                successinfo = "Init.password"
                 return render_to_response('student/student.html',{
-                    "title":'同学管理',
+                    "title":'StudentManagement',
                     'successinfo':successinfo,
                     'success':success,
                     'username':username},context_instance = RequestContext(request))
@@ -177,7 +177,7 @@ def studentprofile(request):
     student = request.user.student
 
     return render_to_response('student/profile.html',{
-            "title":'同学详细信息',
+            "title":'Student详细信息',
             'studentid':username,
             'realname':student.realname,
             'sex':dict(SEX_CHOICES)[student.sex],

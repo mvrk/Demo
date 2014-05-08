@@ -75,7 +75,7 @@ def addcomperformance_setup(request):
         if form.is_valid():
             form.save()
             success = True
-            successinfo = "添加"
+            successinfo = "Add"
             return render_to_response('comperformance/comperformance_setup.html',{
                 "title":'综合测评设置',
                 'form':form,
@@ -99,7 +99,7 @@ def editcomperformance_setup(request):
         if form.is_valid():
             form.update()
             success = True
-            successinfo = "修改"
+            successinfo = "Edit"
             return render_to_response('comperformance/comperformance_setup.html',{
                 "title":'综合测评设置',
                 'form':form,
@@ -171,7 +171,7 @@ def studentcomperformance(request):
     developments = Development.objects.all().order_by('parent')
 
     return render_to_response('comperformance/studentcomperformance.html',{
-            "title":'查看综合-同学',
+            "title":'查看综合-Student',
             'behaviors':behaviors,
             'developments':developments,
             'username':username},context_instance = RequestContext(request))
@@ -282,7 +282,7 @@ def classcomperformances(request):
     username = request.user.username
 
     return render_to_response('comperformance/classcomperformances.html',{
-            "title":'综合测评-班级',
+            "title":'综合测评-Class',
             'username':username},context_instance = RequestContext(request))
 
 @login_required

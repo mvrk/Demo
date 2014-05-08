@@ -682,3 +682,237 @@ Traceback (most recent call last):
   File "/home/alex/virt_env/nikon/lib/python2.6/site-packages/django/db/models/query.py", line 174, in __getitem__
     "Negative indexing is not supported."
 AssertionError: Negative indexing is not supported.
+ERROR 2014-05-08 11:09:08 /home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /accounts/login/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/Demo/webadmin/engine/account.py", line 28, in userlogin
+    'captcha':captcha},context_instance = RequestContext(request))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/shortcuts/__init__.py", line 20, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader.py", line 176, in render_to_string
+    return t.render(context_instance)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 87, in render
+    output = force_unicode(output)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/encoding.py", line 71, in force_unicode
+    s = unicode(s)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/forms/forms.py", line 411, in __unicode__
+    return self.as_widget()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/forms/forms.py", line 458, in as_widget
+    return widget.render(name, self.value(), attrs=attrs)
+  File "/home/alex/Demo/webadmin/captcha/fields.py", line 46, in render
+    store = CaptchaStore.objects.create(challenge=challenge, response=response)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/manager.py", line 137, in create
+    return self.get_query_set().create(**kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/query.py", line 377, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/alex/Demo/webadmin/captcha/models.py", line 56, in save
+    super(CaptchaStore, self).save(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/base.py", line 551, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/manager.py", line 203, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/query.py", line 1593, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 912, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'comperformance.captcha_captchastore' doesn't exist")
+ERROR 2014-05-08 11:11:20 /home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /captcha/image/12fbcf218e90ddaf14b0eea1fbc2f5a5a3c8fb46/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/Demo/webadmin/captcha/views.py", line 33, in captcha_image
+    font = ImageFont.truetype(settings.CAPTCHA_FONT_PATH, settings.CAPTCHA_FONT_SIZE)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/PIL-1.1.7-py2.6-linux-x86_64.egg/ImageFont.py", line 218, in truetype
+    return FreeTypeFont(filename, size, index, encoding)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/PIL-1.1.7-py2.6-linux-x86_64.egg/ImageFont.py", line 134, in __init__
+    self.font = core.getfont(file, size, index, encoding)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/PIL-1.1.7-py2.6-linux-x86_64.egg/ImageFont.py", line 34, in __getattr__
+    raise ImportError("The _imagingft C module is not installed")
+ImportError: The _imagingft C module is not installed
+ERROR 2014-05-08 11:14:08 /home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /captcha/image/1282c1683bbd67d673255ca90aeb5616db7ff2b3/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/Demo/webadmin/captcha/views.py", line 33, in captcha_image
+    font = ImageFont.truetype(settings.CAPTCHA_FONT_PATH, settings.CAPTCHA_FONT_SIZE)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/PIL-1.1.7-py2.6-linux-x86_64.egg/ImageFont.py", line 218, in truetype
+    return FreeTypeFont(filename, size, index, encoding)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/PIL-1.1.7-py2.6-linux-x86_64.egg/ImageFont.py", line 134, in __init__
+    self.font = core.getfont(file, size, index, encoding)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/PIL-1.1.7-py2.6-linux-x86_64.egg/ImageFont.py", line 34, in __getattr__
+    raise ImportError("The _imagingft C module is not installed")
+ImportError: The _imagingft C module is not installed
+ERROR 2014-05-08 11:53:52 /home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /manage/addclass/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/Demo/webadmin/engine/class.py", line 66, in addclass
+    form.save()
+  File "/home/alex/Demo/webadmin/engine/forms.py", line 124, in save
+    newclass.save()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/base.py", line 551, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/manager.py", line 203, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/query.py", line 1593, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 912, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/MySQLdb/cursors.py", line 207, in execute
+    if not self._defer_warnings: self._warning_check()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/MySQLdb/cursors.py", line 117, in _warning_check
+    warn(w[-1], self.Warning, 3)
+Warning: Incorrect string value: '\xE8\xAE\xA1\xE7\xAE\x97...' for column 'classname' at row 1
+ERROR 2014-05-08 11:57:25 /home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /manage/addstudent/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/Demo/webadmin/engine/student.py", line 81, in addstudent
+    form.save()
+  File "/home/alex/Demo/webadmin/engine/forms.py", line 191, in save
+    student.save()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/base.py", line 551, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/manager.py", line 203, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/query.py", line 1593, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 912, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/MySQLdb/cursors.py", line 207, in execute
+    if not self._defer_warnings: self._warning_check()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/MySQLdb/cursors.py", line 117, in _warning_check
+    warn(w[-1], self.Warning, 3)
+Warning: Incorrect string value: '\xE8\xBF\x87\xE7\x91\x9E' for column 'realname' at row 1
+ERROR 2014-05-08 12:04:09 /home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /manage/addassessment/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/Demo/webadmin/engine/assessment.py", line 67, in addassessment
+    if form.is_valid():
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/forms/forms.py", line 124, in is_valid
+    return self.is_bound and not bool(self.errors)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/forms/forms.py", line 115, in _get_errors
+    self.full_clean()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/forms/forms.py", line 270, in full_clean
+    self._clean_fields()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/forms/forms.py", line 290, in _clean_fields
+    value = getattr(self, 'clean_%s' % name)()
+  File "/home/alex/Demo/webadmin/engine/forms.py", line 235, in clean_term
+    Assessment.objects.get(term = self.cleaned_data['term'])
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/query.py", line 361, in get
+    num = len(clone)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/query.py", line 85, in __len__
+    self._result_cache = list(self.iterator())
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/query.py", line 291, in iterator
+    for row in compiler.results_iter():
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 763, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 818, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1267, "Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='")
+ERROR 2014-05-08 13:53:47 /home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /manage/addstudent/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/Demo/webadmin/engine/student.py", line 81, in addstudent
+    form.save()
+  File "/home/alex/Demo/webadmin/engine/forms.py", line 191, in save
+    student.save()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/base.py", line 551, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/manager.py", line 203, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/query.py", line 1593, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 912, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/MySQLdb/cursors.py", line 207, in execute
+    if not self._defer_warnings: self._warning_check()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/MySQLdb/cursors.py", line 117, in _warning_check
+    warn(w[-1], self.Warning, 3)
+Warning: Incorrect string value: '\xE4\xB8\xAD\xE6\x96\x87' for column 'realname' at row 1
+ERROR 2014-05-08 13:54:45 /home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py base 215 Internal Server Error: /manage/addstudent/ status_code:500
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/Demo/webadmin/engine/student.py", line 81, in addstudent
+    form.save()
+  File "/home/alex/Demo/webadmin/engine/forms.py", line 191, in save
+    student.save()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/base.py", line 551, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/manager.py", line 203, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/query.py", line 1593, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 912, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/MySQLdb/cursors.py", line 207, in execute
+    if not self._defer_warnings: self._warning_check()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/MySQLdb/cursors.py", line 117, in _warning_check
+    warn(w[-1], self.Warning, 3)
+Warning: Incorrect string value: '\xE8\x8B\xB1\xE6\x96\x87' for column 'realname' at row 1

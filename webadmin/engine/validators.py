@@ -6,18 +6,18 @@ from django.core.validators import RegexValidator
 from django.core.exceptions import ValidationError
 
 username_re = re.compile(r'^([\w]{9}|[a-zA-Z]{1}[\w]+?)$')
-username = RegexValidator(username_re,u'学生:您的学号,管理员:6-12位,由字母数字下划线组成,首字母为字母','invalid')
+username = RegexValidator(username_re,u'Student: your student ID; Admin: 6-12 digits. (numbers, letters, and underscore.)','invalid')
 
 password_re = re.compile(r'^[\w]+?$')
-password = RegexValidator(password_re,u'密码由字母数字下划线组成的字符串，最少为6位','invalid')
+password = RegexValidator(password_re,u'password由字母数字下划线组成的字符串，最少为6位','invalid')
 
 classid_re = re.compile(r'^[\w]{7}$')
-classid = RegexValidator(classid_re,u'班号由7位数数字组成','invalid')
+classid = RegexValidator(classid_re,u'Class ID Form with 7 digit numbers','invalid')
 
 classname_re = re.compile(r'^[\u4e00-\u9fa5]{2,6}$')
 
 class ClassnameValidator(object):
-    message = u'班级姓名必须是2-6个汉字'
+    message = u'ClassName必须是2-6个汉字'
     code = 'invalid'
 
     def __init__(self, message=None, code=None):
@@ -33,15 +33,15 @@ class ClassnameValidator(object):
 classname = ClassnameValidator()
 
 studentid_re = re.compile(r'^[\w]{9}$')
-studentid = RegexValidator(studentid_re,u'学号由9位数数字组成','invalid')
+studentid = RegexValidator(studentid_re,u'Student ID由9位数数字组成','invalid')
 
 class StudentnameValidator(ClassnameValidator):
-    message = u'同学姓名必须是2-4个汉字'
+    message = u'StudentName必须是2-4个汉字'
 
 studentname = StudentnameValidator()
 
 class TermValidator(object):
-    message = u'要按照(2012年秋)格式填'
+    message = u'要按照(2014Fall)格式填'
     code = 'invalid'
 
     def __init__(self, message=None, code=None):

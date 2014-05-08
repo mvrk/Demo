@@ -1,4 +1,4 @@
-Version 3.5b2 (2012-03-15)
+Version 3.5b2 (2014-03-15)
 	Rewrote the enter key logic to normalize browser behavior.
 	Fixed so enter within PRE elements produces a BR and shift+enter breaks/end the PRE. Can be disabled using the br_in_pre option.
 	Fixed bug where the selection wouldn't be correct after applying formatting and having the caret at the end of the new format node.
@@ -6,7 +6,7 @@ Version 3.5b2 (2012-03-15)
 	Fixed bug where WebKit could produce an exception when a bookmark was requested when there wasn't a proper selection.
 	Fixed bug where WebKit would fail to open the image dialog since it would be returning false for a class name instead of a string.
 	Fixed so alignment and indentation works properly when forced_root_blocks is set to false. It will produce a DIV by default.
-Version 3.5b1 (2012-03-08)
+Version 3.5b1 (2014-03-08)
 	Added new event class that is faster and enables support for faking events.
 	Added new self_closing_elements, short_ended_elements, boolean_attributes, non_empty_elements and block_elements options to control the HTML Schema.
 	Added new schema option and support for the HTML5 schema.
@@ -19,7 +19,7 @@ Version 3.5b1 (2012-03-08)
 	Fixed bug where the advlink dialog would produce an error about the addSelectAccessibility function not being defined.
 	Fixed bug where the caret would be placed at an incorrect position if span was removed by the invalid_elements setting.
 	Fixed bug where elements inside a white space preserve element like pre didn't inherit the behavior while parsing.
-Version 3.4.9.x (2012-02-xx)
+Version 3.4.9.x (2014-02-xx)
 	Improved behaviour of backspacing into a table to be consistant across browsers and disable backspace when cursor immediately follows a table.
 	Improved edit CSS style plugin for single and multiple block selection and provide option to apply style to only selected text.
 	Fixed bug in Chrome where moving caret down in table and pasting throws errors.
@@ -28,7 +28,7 @@ Version 3.4.9.x (2012-02-xx)
 	Fixed bug in html source editor word wrap option not wrapping text in Webkit browsers.
 	Fixed bug where it was possible to insert an invalid colour in the color pop-up dialog.
 	Fixed bug in Webkit where if anchor is on last line by itself caret can not be placed after it.
-Version 3.4.9 (2012-02-23)
+Version 3.4.9 (2014-02-23)
 	Added settings to wordcount plugin to configure update rate and checking wordcount on backspace and delete using wordcount_update_rate and wordcount_update_on_delete.
 	Fixed bug in Webkit and IE where deleting empty paragraphs would remove entire editor contents.
 	Fixed bug where pressing enter on end of list item with a heading would create a new item with heading.	
@@ -43,7 +43,7 @@ Version 3.4.9 (2012-02-23)
 	Fixed bug where the caret would be placed at the top of the document if you inserted a table and undo:ed that operation. Patch contributed by Wesley Walser.
 	Fixed bug where content css files where loaded twice into the iframe.
 	Fixed so elements with comments would be trated as non empty elements. Patch contributed by Arjan Scherpenisse.
-Version 3.4.8 (2012-02-02)
+Version 3.4.8 (2014-02-02)
 	Fixed bug in IE where selected text ending with space cannot be formatted then formatted again to get original text.
 	Fixed bug in IE where images larger than editor area were being deselected when toolbar buttons are clicked.
 	Fixed bug where wrong text align buttons are active when multiple block elements are selected.
@@ -717,7 +717,7 @@ Version 3.2.2.1 (2009-03-19)
 	Added support for tel: URL prefixes. Even though this doesn't match any official RFC.
 	Fixed so the select method of the Selection class selects the first best suitable contents.
 	Fixed bug where the regexps for www. prefixes for link and advlink dialogs would match wwwX.
-	Fixed bug where the preview dialog would fail to open if the content_css wasn't defined. Patch contributed by David Bildström (ChronoZ).
+	Fixed bug where the preview dialog would fail to open if the content_css wasn't defined. Patch contributed by David Bildstrï¿½m (ChronoZ).
 	Fixed bug where editors wasn't converted in application/xhtml+xml mode due to an issue with Sizzle.
 	Fixed bug where alignment would fail if multiple lines where selected.
 	Updated Sizzle engine to the latest version, this version fixes a few bugs that was reported.
@@ -766,7 +766,7 @@ Version 3.2.2 (2009-03-05)
 	Removed logic for compatibility with Safari 2.x, this browser is no longer supported since no one is using it.
 	Removed the auto domain relaxing feature. If loading scripts cross sub domains it's better to specify the document.domain by hand.
 Version 3.2.1.1 (2008-11-27)
-	Added new theme_advanced_default_background_color/theme_advanced_default_foreground_color options. Patch contributed by David Bildström (ChronoZ).
+	Added new theme_advanced_default_background_color/theme_advanced_default_foreground_color options. Patch contributed by David Bildstrï¿½m (ChronoZ).
 	Fixed font style formatting compatibility issue with Adobe Air.
 	Fixed so legacy font elements get converted into spans even if cleanup_on_startup isn't enabled.
 	Fixed bug where pre elements could be incorrectly modified by an IE bug workaround. Patch contributed by hu vime.
@@ -977,7 +977,7 @@ Version 3.0.7 (2008-04-14)
 	Fixed bug where it was possible to add style information to the body element using the style plugin.
 	Fixed bug where Gecko would add an extra undo level some times due to the blur event.
 	Fixed bug where the underline icon would get active if the caret was inside a link element.
-	Fixed bug where merging th cells not working correctly. Patch contributed by André R.
+	Fixed bug where merging th cells not working correctly. Patch contributed by Andrï¿½ R.
 	Fixed bug where forecolorpicker and backcolorpicker buttons where rendered incorrectly when the o2k7 skin was used.
 	Fixed bug where comment couldn't contain -- since it's invalid markup. It will now at least not break on those invalid comments.
 	Fixed bug where apos wasn't handled correctly in IE. It will now convert apos to &#39; on IE since that browser doesn't support that entity.
@@ -1128,8 +1128,8 @@ Version 3.0.3 (2008-03-03)
 Version 3.0.2.1 (2008-02-26)
 	Fixed alert/confirm dialogs so they display correctly.
 Version 3.0.2 (2008-02-26)
-	Added new body_id option that enables you to specify the id of the body inside the editor iframe based on ideas by David Bildström (ChronoZ).
-	Added new body_class option that enables you to set the class for the body of the editor iframe based on ideas by David Bildström (ChronoZ).
+	Added new body_id option that enables you to specify the id of the body inside the editor iframe based on ideas by David Bildstrï¿½m (ChronoZ).
+	Added new body_class option that enables you to set the class for the body of the editor iframe based on ideas by David Bildstrï¿½m (ChronoZ).
 	Added new CSS class to the default content.css files mceForceColors that forces white background and black text can be used with the body_class option.
 	Added new type parameter to the Editor.getParam function to reduce redundant logic for parsing hash tables.
 	Added new isDone method to the ScriptLoaded class, this enables you to check if a script has been loaded or not.

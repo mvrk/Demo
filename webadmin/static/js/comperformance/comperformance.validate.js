@@ -124,14 +124,14 @@
                 },
                 messages:{
                     newpassword:{
-                        required:"密码必须要填(由字母数字下划线组成的字符串，最少为6位)", 
-                        minlength:"密码至少为6位",
-                        maxlength:"密码至多为12位",
-                        password:"密码由字母数字下划线组成的字符串，最少为6位",
+                        required:"password必须要填(由字母数字下划线组成的字符串，最少为6位)",
+                        minlength:"password至少为6位",
+                        maxlength:"password至多为12位",
+                        password:"password由字母数字下划线组成的字符串，最少为6位",
                     },
                     renewpassword:{
-                        required:'重复密码必须要填',  
-                        equalTo:'此处必须输入和上栏密码相同的内容',
+                        required:'重复password必须要填',
+                        equalTo:'此处必须输入和上栏password相同的内容',
                     },
                 },
                 invalidHandler: function(form, validator) {
@@ -156,12 +156,12 @@
                 },
                 messages:{
                     classid:{
-                        required:"班号必须要填(7位数数字)", 
-                        classid:"班号由7位数数字组成",
+                        required:"Class ID必须要填(7位数数字)",
+                        classid:"Class ID Form with 7 digit numbers",
                     },
                     classname:{
-                        required:'班级姓名必须要填（2-6个汉字）',  
-                        classname:'班级姓名必须是2-6个汉字',
+                        required:'ClassName必须要填（2-6个汉字）',
+                        classname:'ClassName必须是2-6个汉字',
                     },
                 },
                 invalidHandler: function(form, validator) {
@@ -186,12 +186,12 @@
                 },
                 messages:{
                     classid:{
-                        required:"班号必须要填(7位数数字)", 
-                        classid:"班号由7位数数字组成",
+                        required:"Class ID必须要填(7位数数字)",
+                        classid:"Class ID Form with 7 digit numbers",
                     },
                     classname:{
-                        required:'班级姓名必须要填（2-6个汉字）',  
-                        classname:'班级姓名必须是2-6个汉字',
+                        required:'ClassName必须要填（2-6个汉字）',
+                        classname:'ClassName必须是2-6个汉字',
                     },
                 },
                 invalidHandler: function(form, validator) {
@@ -223,18 +223,18 @@
                 },
                 messages:{
                     studentid:{
-                        required:"学号必须要填(9位数数字)", 
-                        studentid:"学号由9位数数字组成",
+                        required:"Student ID必须要填(9位数数字)",
+                        studentid:"Student ID由9位数数字组成",
                     },
                     studentname:{
-                        required:'同学姓名必须要填（2-4个汉字）',  
-                        studentname:'同学姓名必须是2-4个汉字',
+                        required:'StudentName必须要填（2-4个汉字）',
+                        studentname:'StudentName必须是2-4个汉字',
                     },
                     studentsex:{
-                        required:"请选择性别",
+                        required:"Please SelectGender",
                     },
                     studentclass:{
-                        required:"请选择班级",
+                        required:"Please SelectClass",
                     },
                 },
                 invalidHandler: function(form, validator) {
@@ -262,15 +262,15 @@
                 },
                 messages:{
                     studentid:{
-                        required:"学号必须要填(9位数数字)", 
-                        studentid:"学号由9位数数字组成",
+                        required:"Student ID必须要填(9位数数字)",
+                        studentid:"Student ID由9位数数字组成",
                     },
                     studentname:{
-                        required:'同学姓名必须要填（2-4个汉字）',  
-                        studentname:'同学姓名必须是2-4个汉字',
+                        required:'StudentName必须要填（2-4个汉字）',
+                        studentname:'StudentName必须是2-4个汉字',
                     },
                     studentclass:{
-                        required:"请选择班级",
+                        required:"Please SelectClass",
                     },
                 },
                 invalidHandler: function(form, validator) {
@@ -316,7 +316,7 @@
                 messages:{
                     term:{
                         required:"学期必须填",
-                        term:"要按照(2012年秋)格式填",
+                        term:"要按照(2014Fall)格式填",
                     },
                     begindate:{
                         required:"开始日期必须填",
@@ -325,22 +325,22 @@
                         required:"结束日期学期必须填",
                     },
                     excellent:{
-                        required:"优必须填",
+                        required:"A必须填",
                         digits:"请输入数字",
-                        max:"优最大为100",
-                        min:"优最小为0",
+                        max:"A最大为100",
+                        min:"A最小为0",
                     },
                     good:{
-                        required:"良必须填",
+                        required:"B必须填",
                         digits:"请输入数字",
-                        max:"良最大为100",
-                        min:"良最小为0",
+                        max:"B最大为100",
+                        min:"B最小为0",
                     },
                     ordinary:{
-                        required:"中必须填",
+                        required:"C必须填",
                         digits:"请输入数字",
-                        max:"中最大为100",
-                        min:"中最小为0",
+                        max:"C最大为100",
+                        min:"C最小为0",
                     },
                 },
                 invalidHandler: function(form, validator) {
@@ -356,7 +356,7 @@
                 }
                     
                 if((parseInt($('#excellent').val()) + parseInt($('#good').val()) + parseInt($('#ordinary').val())) != 100){
-                    var message = '优良中之和必须为100';
+                    var message = 'ABC之和必须为100';
                     $("#mws-validate-error").html(message).show();
                     event.preventDefault();
                 }
@@ -400,7 +400,7 @@
                 messages:{
                     term:{
                         required:"学期必须填",
-                        term:"要按照(2012年秋)格式填",
+                        term:"要按照(2014Fall)格式填",
                     },
                     begindate:{
                         required:"开始日期必须填",
@@ -409,22 +409,22 @@
                         required:"结束日期学期必须填",
                     },
                     excellent:{
-                        required:"优必须填",
+                        required:"A必须填",
                         digits:"请输入数字",
-                        max:"优最大为100",
-                        min:"优最小为0",
+                        max:"A最大为100",
+                        min:"A最小为0",
                     },
                     good:{
-                        required:"良必须填",
+                        required:"B必须填",
                         digits:"请输入数字",
-                        max:"良最大为100",
-                        min:"良最小为0",
+                        max:"B最大为100",
+                        min:"B最小为0",
                     },
                     ordinary:{
-                        required:"中必须填",
+                        required:"C必须填",
                         digits:"请输入数字",
-                        max:"中最大为100",
-                        min:"中最小为0",
+                        max:"C最大为100",
+                        min:"C最小为0",
                     },
                 },
                 invalidHandler: function(form, validator) {
@@ -440,7 +440,7 @@
                 }
                     
                 if((parseInt($('#editexcellent').val()) + parseInt($('#editgood').val()) + parseInt($('#editordinary').val())) != 100){
-                    var message = '优良中之和必须为100';
+                    var message = 'ABC之和必须为100';
                     $("#edit-mws-validate-error").html(message).show();
                     event.preventDefault();
                 }
@@ -459,8 +459,8 @@
                 },
                 messages:{
                     grades:{
-                        required:"必须选择成绩单",
-                        accept:"成绩单为以xls结尾的excel",
+                        required:"必须选择GPAForm",
+                        accept:"GPAForm为以xls结尾的excel",
                     },
                 },
                 invalidHandler: function(form, validator) {
@@ -483,10 +483,10 @@
                 },
                 messages:{
                     behaviorname:{
-                        required:"日常活动名称必须要填",
+                        required:"日常活动Name必须要填",
                     },
                     actlevel:{
-                        required:"级别必须要填",
+                        required:"Level必须要填",
                     },
                 },
                 invalidHandler: function(form, validator) {
@@ -509,10 +509,10 @@
                 },
                 messages:{
                     behaviorname:{
-                        required:"日常活动名称必须要填",
+                        required:"日常活动Name必须要填",
                     },
                     actlevel:{
-                        required:"级别必须要填",
+                        required:"Level必须要填",
                     },
                 },
                 invalidHandler: function(form, validator) {
@@ -535,7 +535,7 @@
                 },
                 messages:{
                     developmentname:{
-                        required:"个性发展名称必须要填",
+                        required:"个性发展Name必须要填",
                     },
                     developmentlevel:{
                         required:"个性发展大类必须要填",
@@ -561,7 +561,7 @@
                 },
                 messages:{
                     developmentname:{
-                        required:"个性发展名称必须要填",
+                        required:"个性发展Name必须要填",
                     },
                     developmentlevel:{
                         required:"个性发展大类必须要填",
@@ -634,7 +634,7 @@
                 messages:{
                     term:{
                         required:"学期必须填",
-                        term:"要按照(2012年秋)格式填",
+                        term:"要按照(2014Fall)格式填",
                     },
                     moral:{
                         required:"互评最高分必须要填",
@@ -655,28 +655,28 @@
                         min:"体能分数最小为0",
                     },
                     excellent:{
-                        required:"优分数必须要填",
-                        number:"优分数为数字",
-                        max:"优分数最大为100",
-                        min:"优分数最小为0",
+                        required:"A分数必须要填",
+                        number:"A分数为数字",
+                        max:"A分数最大为100",
+                        min:"A分数最小为0",
                     },
                     good:{
-                        required:"良分数必须要填",
-                        number:"良分数为数字",
-                        max:"良分数最大为100",
-                        min:"良分数最小为0",
+                        required:"B分数必须要填",
+                        number:"B分数为数字",
+                        max:"B分数最大为100",
+                        min:"B分数最小为0",
                     },
                     ordinary:{
-                        required:"中分数必须要填",
-                        number:"中分数为数字",
-                        max:"中分数最大为100",
-                        min:"中分数最小为0",
+                        required:"C分数必须要填",
+                        number:"C分数为数字",
+                        max:"C分数最大为100",
+                        min:"C分数最小为0",
                     },
                     development:{
-                        required:"单项最高分必须要填",
-                        number:"单项最高分为数字",
-                        max:"单项最高分最大为100",
-                        min:"单项最高分最小为0",
+                        required:"Form项最高分必须要填",
+                        number:"Form项最高分为数字",
+                        max:"Form项最高分最大为100",
+                        min:"Form项最高分最小为0",
                     },
                     behavior:{
                         required:"日常行为分基础分必须要填",
@@ -760,7 +760,7 @@
                 messages:{
                     term:{
                         required:"学期必须填",
-                        term:"要按照(2012年秋)格式填",
+                        term:"要按照(2014Fall)格式填",
                     },
                     moral:{
                         required:"互评最高分必须要填",
@@ -781,28 +781,28 @@
                         min:"体能分数最小为0",
                     },
                     excellent:{
-                        required:"优分数必须要填",
-                        number:"优分数为数字",
-                        max:"优分数最大为100",
-                        min:"优分数最小为0",
+                        required:"A分数必须要填",
+                        number:"A分数为数字",
+                        max:"A分数最大为100",
+                        min:"A分数最小为0",
                     },
                     good:{
-                        required:"良分数必须要填",
-                        number:"良分数为数字",
-                        max:"良分数最大为100",
-                        min:"良分数最小为0",
+                        required:"B分数必须要填",
+                        number:"B分数为数字",
+                        max:"B分数最大为100",
+                        min:"B分数最小为0",
                     },
                     ordinary:{
-                        required:"中分数必须要填",
-                        number:"中分数为数字",
-                        max:"中分数最大为100",
-                        min:"中分数最小为0",
+                        required:"C分数必须要填",
+                        number:"C分数为数字",
+                        max:"C分数最大为100",
+                        min:"C分数最小为0",
                     },
                     development:{
-                        required:"单项最高分必须要填",
-                        number:"单项最高分为数字",
-                        max:"单项最高分最大为100",
-                        min:"单项最高分最小为0",
+                        required:"Form项最高分必须要填",
+                        number:"Form项最高分为数字",
+                        max:"Form项最高分最大为100",
+                        min:"Form项最高分最小为0",
                     },
                     behavior:{
                         required:"日常行为分基础分必须要填",

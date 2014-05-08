@@ -43,7 +43,7 @@ def importgrades(request):
                 fp.write(content)
                 fp.close()
                 
-                #格式化xls文件中数据，将其存到数据库中
+                #格式化xls文件C数据，将其存到数据库C
                 book = open_workbook(fname)
                 sheet = book.sheet_by_index(0)
 
@@ -60,7 +60,7 @@ def importgrades(request):
                 successinfo = "上传"
                 success = True
                 return render_to_response('grade/import.html',{
-                    "title":'导入成绩单',
+                    "title":'ImportGPAForm',
                     'form':form,
                     'successinfo':successinfo,
                     'success':success,
@@ -71,11 +71,11 @@ def importgrades(request):
                 print e
         else:
             return render_to_response('grade/import.html',{
-                "title":'导入成绩单',
+                "title":'ImportGPAForm',
                 'form':form,
                 'username':username},context_instance = RequestContext(request))
     return render_to_response('grade/import.html',{
-            "title":'同学详细信息',
+            "title":'Student详细信息',
             'studentid':username,
             'username':username},context_instance = RequestContext(request))
 
@@ -84,7 +84,7 @@ def index(request):
     username = request.user.username
 
     return render_to_response('grade/grades.html',{
-            "title":'同学成绩',
+            "title":'StudentGPA',
             'username':username},context_instance = RequestContext(request))
 
 @login_required
@@ -92,7 +92,7 @@ def classgrades(request):
     username = request.user.username
 
     return render_to_response('grade/classgrades.html',{
-            "title":'班级成绩',
+            "title":'ClassGPA',
             'username':username},context_instance = RequestContext(request))
 
 @login_required
@@ -100,7 +100,7 @@ def index(request):
     username = request.user.username
 
     return render_to_response('grade/grades.html',{
-            "title":'同学成绩',
+            "title":'StudentGPA',
             'username':username},context_instance = RequestContext(request))
 
 @login_required

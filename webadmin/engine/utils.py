@@ -90,7 +90,7 @@ def get_datatables_records(request, querySet, columnIndexNameMap, jsonTemplatePa
 
     ######################################参数解析过程################################################
 
-    ######################################提取json中的数据集################################################
+    ######################################提取jsonC的数据集################################################
 
     iTotalRecords = iTotalDisplayRecords = querySet.count() #总共的rows数
     querySet = querySet[startRecord:endRecord] #本页内容切片
@@ -111,10 +111,10 @@ def get_datatables_records(request, querySet, columnIndexNameMap, jsonTemplatePa
                     if val == colitems[col]:
                         if isinstance(rowvalues[idx],datetime):
                             rowvalues[idx] = rowvalues[idx].strftime('%Y-%m-%d %H:%M:%S') 
-                        #使用unicode原因是为了处理int,long,和unicode类型的中文问题,此处使用str，若遇到unicode中文会出错
+                        #使用unicode原因是为了处理int,long,和unicode类型的C文问题,此处使用str，若遇到unicodeC文会出错
                         rowlist.append(unicode(rowvalues[idx]))
             aaData.append(rowlist)
 
-    ######################################提取json中的数据集################################################
+    ######################################提取jsonC的数据集################################################
 
     return (aaData,sEcho,iTotalRecords,iTotalDisplayRecords,sColumns)

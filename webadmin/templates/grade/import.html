@@ -29,19 +29,19 @@
                 {% endif %}
                 {% if success %}
                     <div id='success' class="mws-form-message success">
-                        您已经{{successinfo}}成功!
+                        You've Already{{successinfo}}Success!
                     </div>
                 {% endif %}
                 <div class="mws-panel grid_8">
                     <div class="mws-panel-header">
-                        <span><i class="icon-magic"></i>成绩管理</span>
+                        <span><i class="icon-magic"></i>GPAManagement</span>
                     </div>
                     <div class="mws-panel-body no-padding">
                     <div class="wizard-nav wizard-nav-horizontal">
                         <ul>
                             <li data-wzd-id="wzd_17e9qcp1i1flsjc21g6n_0" class="current">
                                 <span>
-                                    <i class="icol-accept"></i>导入成绩单
+                                    <i class="icol-accept"></i>ImportGPAForm
                                 </span>
                             </li>
                         </ul>
@@ -49,9 +49,9 @@
                         <form id="importgrades" method="post" enctype="multipart/form-data" class="mws-form" action="{% url importgrades %}">
                             {% csrf_token %}
                             <fieldset id="step-1" class="mws-form-inline">
-                                <legend class="wizard-label" style="display:none"><i class="icol-accept"></i>导入成绩单</legend>
+                                <legend class="wizard-label" style="display:none"><i class="icol-accept"></i>ImportGPAForm</legend>
                                 <div class="mws-form-row">
-                                    <label class="mws-form-label">成绩单<span class="required">*</span></label>
+                                    <label class="mws-form-label">GPAForm<span class="required">*</span></label>
                                     <div class="mws-form-item">
                                         <input type="file" name="grades" id='grades' {% if form.grades.errors %} class="error" {% endif %}/>
                                         <label for="picture" class="error" generated="true" style="display:none"></label>
@@ -64,8 +64,8 @@
                                 </div>
                                 <div class="mws-button-row">
                                     <center>
-                                        <input type="submit" value="提交" class="btn btn-danger" />
-                                        <input type="reset" value="重置" class="btn " />
+                                        <input type="submit" value="Submit" class="btn btn-danger" />
+                                        <input type="reset" value="Reset" class="btn " />
                                     </center>
                                 </div>
                             </fieldset>
@@ -78,7 +78,7 @@
                        
             <!-- Footer -->
             <div id="mws-footer">
-                Copyright Your Website 2012. All Rights Reserved.
+                Copyright Your Website 2014. All Rights Reserved.
             </div>
             
         </div>

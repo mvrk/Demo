@@ -7,7 +7,7 @@
  * License:	    GPL v2 or BSD 3 point style
  * Project:	    DataTables
  * 
- * Copyright 2009-2012 Allan Jardine, all rights reserved.
+ * Copyright 2009-2014 Allan Jardine, all rights reserved.
  *
  * This source file is free software, under either the GPL v2 license or a
  * BSD style license, available at:

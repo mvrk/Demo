@@ -137,9 +137,9 @@ $.fn.dataTableExt.oApi.fnReloadAjax = function ( oSettings, sNewSource, fnCallba
 
             $('#classes_filter').attr('style','height:25px;');
         
-            $("<a href='#' class='btn' id='editclass'style='float:right;width:66px;margin-right:2px;'><i class='icon-edit'></i>修改</a> \
-            <a href='#' class='btn' id='deleteclass'  style='float:right;width:66px;margin-right:2px;'><i class='icon-remove'></i>删除</a> \
-            <a href='#' class='btn' id='addclass' style='float:right;width:66px;margin-right:2px;'><i class='icon-plus'></i>添加</a>").appendTo('#classes_filter');
+            $("<a href='#' class='btn' id='editclass'style='float:right;width:66px;margin-right:2px;'><i class='icon-edit'></i>Edit</a> \
+            <a href='#' class='btn' id='deleteclass'  style='float:right;width:66px;margin-right:2px;'><i class='icon-remove'></i>Delete</a> \
+            <a href='#' class='btn' id='addclass' style='float:right;width:66px;margin-right:2px;'><i class='icon-plus'></i>Add</a>").appendTo('#classes_filter');
             
             //delete one row class
             $("#deleteclass").bind("click", function (event) {
@@ -227,10 +227,10 @@ $.fn.dataTableExt.oApi.fnReloadAjax = function ( oSettings, sNewSource, fnCallba
 
             $('#students_filter').attr('style','height:25px;');
         
-            $("<a href='#' class='btn' id='editstudent'style='float:right;width:66px;margin-right:2px;'><i class='icon-edit'></i>修改</a> \
-            <a href='#' class='btn' id='deletestudent'  style='float:right;width:66px;margin-right:2px;'><i class='icon-remove'></i>删除</a> \
-            <a href='#' class='btn' id='addstudent' style='float:right;width:66px;margin-right:2px;'><i class='icon-plus'></i>添加</a>\
-            <a href='#' class='btn' id='initstudent' style='float:right;width:100px;margin-right:2px;'><i class='icol-ui-text-field-password'></i>初始化密码</a>").appendTo('#students_filter');
+            $("<a href='#' class='btn' id='editstudent'style='float:right;width:66px;margin-right:2px;'><i class='icon-edit'></i>Edit</a> \
+            <a href='#' class='btn' id='deletestudent'  style='float:right;width:66px;margin-right:2px;'><i class='icon-remove'></i>Delete</a> \
+            <a href='#' class='btn' id='addstudent' style='float:right;width:66px;margin-right:2px;'><i class='icon-plus'></i>Add</a>\
+            <a href='#' class='btn' id='initstudent' style='float:right;width:100px;margin-right:2px;'><i class='icol-ui-text-field-password'></i>Init.password</a>").appendTo('#students_filter');
             
             //init one row student
             $("#initstudent").bind("click", function (event) {
@@ -317,9 +317,9 @@ $.fn.dataTableExt.oApi.fnReloadAjax = function ( oSettings, sNewSource, fnCallba
 
             $('#assessments_filter').attr('style','height:25px;');
 
-            $("<a href='#' class='btn' id='editassessment'style='float:right;width:66px;margin-right:2px;'><i class='icon-edit'></i>修改</a> \
-            <a href='#' class='btn' id='deleteassessment'  style='float:right;width:66px;margin-right:2px;'><i class='icon-remove'></i>删除</a> \
-            <a href='#' class='btn' id='addassessment' style='float:right;width:66px;margin-right:2px;'><i class='icon-plus'></i>添加</a>").appendTo('#assessments_filter');
+            $("<a href='#' class='btn' id='editassessment'style='float:right;width:66px;margin-right:2px;'><i class='icon-edit'></i>Edit</a> \
+            <a href='#' class='btn' id='deleteassessment'  style='float:right;width:66px;margin-right:2px;'><i class='icon-remove'></i>Delete</a> \
+            <a href='#' class='btn' id='addassessment' style='float:right;width:66px;margin-right:2px;'><i class='icon-plus'></i>Add</a>").appendTo('#assessments_filter');
 
             //delete one row assessment
             $("#deleteassessment").bind("click", function (event) {
@@ -454,9 +454,9 @@ $.fn.dataTableExt.oApi.fnReloadAjax = function ( oSettings, sNewSource, fnCallba
             });
 
             $('#goassessments_filter').attr('style','height:25px;');
-            $("<a href='#' class='btn' id='goordinary'style='float:right;width:66px;margin-right:2px;'><i class='icol-smiley-cry'></i>中</a> \
-            <a href='#' class='btn' id='gogood'  style='float:right;width:66px;margin-right:2px;'><i class='icol-smiley-red'></i>良</a> \
-            <a href='#' class='btn' id='goexcellent' style='float:right;width:66px;margin-right:2px;'><i class='icol-smiley-cool'></i>优</a>").appendTo('#goassessments_filter');
+            $("<a href='#' class='btn' id='goordinary'style='float:right;width:66px;margin-right:2px;'><i class='icol-smiley-cry'></i>C</a> \
+            <a href='#' class='btn' id='gogood'  style='float:right;width:66px;margin-right:2px;'><i class='icol-smiley-red'></i>B</a> \
+            <a href='#' class='btn' id='goexcellent' style='float:right;width:66px;margin-right:2px;'><i class='icol-smiley-cool'></i>A</a>").appendTo('#goassessments_filter');
             
             //excellent
             $("#goexcellent").bind("click", function (event) {
@@ -467,13 +467,13 @@ $.fn.dataTableExt.oApi.fnReloadAjax = function ( oSettings, sNewSource, fnCallba
                     $.getJSON('/ajax/go_assessments/', {
                         term:$($goassessment_selectrow[0]).text(),
                         username:$($goassessment_selectrow[2]).text(),
-                        result:"优",
+                        result:"A",
                     },
                     function(data){
                         if(data[0] == "true"){
-                            $($goassessment_selectrow[4]).text("优");
+                            $($goassessment_selectrow[4]).text("A");
                         }else{
-                            $('#resultnum').text("优最多可选" + data[1] + "个");
+                            $('#resultnum').text("A最多可选" + data[1] + "个");
                             $("#num-assessment-dialog").dialog("open");
                         }
                     });
@@ -489,13 +489,13 @@ $.fn.dataTableExt.oApi.fnReloadAjax = function ( oSettings, sNewSource, fnCallba
                     $.getJSON('/ajax/go_assessments/', {
                         term:$($goassessment_selectrow[0]).text(),
                         username:$($goassessment_selectrow[2]).text(),
-                        result:"良",
+                        result:"B",
                     },
                     function(data){
                         if(data[0] == "true"){
-                            $($goassessment_selectrow[4]).text("良");
+                            $($goassessment_selectrow[4]).text("B");
                         }else{
-                            $('#resultnum').text("良最多可选" + data[1] + "个");
+                            $('#resultnum').text("B最多可选" + data[1] + "个");
                             $("#num-assessment-dialog").dialog("open");
                         }
                     });
@@ -511,13 +511,13 @@ $.fn.dataTableExt.oApi.fnReloadAjax = function ( oSettings, sNewSource, fnCallba
                     $.getJSON('/ajax/go_assessments/', {
                         term:$($goassessment_selectrow[0]).text(),
                         username:$($goassessment_selectrow[2]).text(),
-                        result:"中",
+                        result:"C",
                     },
                     function(data){
                         if(data[0] == "true"){
-                            $($goassessment_selectrow[4]).text("中");
+                            $($goassessment_selectrow[4]).text("C");
                         }else{
-                            $('#resultnum').text("中最多可选" + data[1] + "个");
+                            $('#resultnum').text("C最多可选" + data[1] + "个");
                             $("#num-assessment-dialog").dialog("open");
                         }
                     });
@@ -626,9 +626,9 @@ $.fn.dataTableExt.oApi.fnReloadAjax = function ( oSettings, sNewSource, fnCallba
 
             $('#behaviors_filter').attr('style','height:25px;');
             
-            $("<a href='#' class='btn' id='editbehavior'style='float:right;width:66px;margin-right:2px;'><i class='icon-edit'></i>修改</a> \
-            <a href='#' class='btn' id='deletebehavior'  style='float:right;width:66px;margin-right:2px;'><i class='icon-remove'></i>删除</a> \
-            <a href='#' class='btn' id='addbehavior' style='float:right;width:66px;margin-right:2px;'><i class='icon-plus'></i>添加</a>").appendTo('#behaviors_filter');
+            $("<a href='#' class='btn' id='editbehavior'style='float:right;width:66px;margin-right:2px;'><i class='icon-edit'></i>Edit</a> \
+            <a href='#' class='btn' id='deletebehavior'  style='float:right;width:66px;margin-right:2px;'><i class='icon-remove'></i>Delete</a> \
+            <a href='#' class='btn' id='addbehavior' style='float:right;width:66px;margin-right:2px;'><i class='icon-plus'></i>Add</a>").appendTo('#behaviors_filter');
             
             
             //delete one row behavior
@@ -704,9 +704,9 @@ $.fn.dataTableExt.oApi.fnReloadAjax = function ( oSettings, sNewSource, fnCallba
 
             $('#developments_filter').attr('style','height:25px;');
             
-            $("<a href='#' class='btn' id='editdevelopment'style='float:right;width:66px;margin-right:2px;'><i class='icon-edit'></i>修改</a> \
-            <a href='#' class='btn' id='deletedevelopment'  style='float:right;width:66px;margin-right:2px;'><i class='icon-remove'></i>删除</a> \
-            <a href='#' class='btn' id='adddevelopment' style='float:right;width:66px;margin-right:2px;'><i class='icon-plus'></i>添加</a>").appendTo('#developments_filter');
+            $("<a href='#' class='btn' id='editdevelopment'style='float:right;width:66px;margin-right:2px;'><i class='icon-edit'></i>Edit</a> \
+            <a href='#' class='btn' id='deletedevelopment'  style='float:right;width:66px;margin-right:2px;'><i class='icon-remove'></i>Delete</a> \
+            <a href='#' class='btn' id='adddevelopment' style='float:right;width:66px;margin-right:2px;'><i class='icon-plus'></i>Add</a>").appendTo('#developments_filter');
             
             //delete one row development
             $("#deletedevelopment").bind("click", function (event) {
@@ -788,9 +788,9 @@ $.fn.dataTableExt.oApi.fnReloadAjax = function ( oSettings, sNewSource, fnCallba
 
             $('#comperformance_setups_filter').attr('style','height:25px;');
             
-            $("<a href='#' class='btn' id='editcomperformance_setup'style='float:right;width:66px;margin-right:2px;'><i class='icon-edit'></i>修改</a> \
-            <a href='#' class='btn' id='deletecomperformance_setup'  style='float:right;width:66px;margin-right:2px;'><i class='icon-remove'></i>删除</a> \
-            <a href='#' class='btn' id='addcomperformance_setup' style='float:right;width:66px;margin-right:2px;'><i class='icon-plus'></i>添加</a>").appendTo('#comperformance_setups_filter');
+            $("<a href='#' class='btn' id='editcomperformance_setup'style='float:right;width:66px;margin-right:2px;'><i class='icon-edit'></i>Edit</a> \
+            <a href='#' class='btn' id='deletecomperformance_setup'  style='float:right;width:66px;margin-right:2px;'><i class='icon-remove'></i>Delete</a> \
+            <a href='#' class='btn' id='addcomperformance_setup' style='float:right;width:66px;margin-right:2px;'><i class='icon-plus'></i>Add</a>").appendTo('#comperformance_setups_filter');
             
             //delete one row comperformance_setup
             $("#deletecomperformance_setup").bind("click", function (event) {
@@ -886,7 +886,7 @@ $.fn.dataTableExt.oApi.fnReloadAjax = function ( oSettings, sNewSource, fnCallba
                 "bServerSide": true,
                 "sAjaxSource": "/ajax/ajaxcomperformance/",
                 "fnRowCallback":function(nRow,aData,iDisplayIndex,iDisplayIndexFull){
-                    $('td:last',nRow).html("<button type='button' class='btn'><i class='icon-edit'></i>修改</button>"); 
+                    $('td:last',nRow).html("<button type='button' class='btn'><i class='icon-edit'></i>Edit</button>");
                 },
                 "fnCreatedRow":function(nRow,aData,iDataIndex){
                    // $('td:eq(7)',nRow).addClass('little_padding');
@@ -959,7 +959,7 @@ $.fn.dataTableExt.oApi.fnReloadAjax = function ( oSettings, sNewSource, fnCallba
                     oTable.fnUpdate( jqInputs[j].value, nRow, i, false );
                 }
                 
-                oTable.fnUpdate( "<button type='button' class='btn'><i class='icon-edit'></i>修改</button>", nRow, i + 1, false );
+                oTable.fnUpdate( "<button type='button' class='btn'><i class='icon-edit'></i>Edit</button>", nRow, i + 1, false );
             
                 oTable.fnDraw();
             }

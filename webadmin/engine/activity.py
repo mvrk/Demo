@@ -20,7 +20,7 @@ def behavior(request):
     username = request.user.username
 
     return render_to_response('activity/behavior.html',{
-            "title":'日常行为活动管理',
+            "title":'Daily Behavior Management',
             'username':username},context_instance = RequestContext(request))
             
 @login_required
@@ -67,16 +67,16 @@ def addbehavior(request):
         if form.is_valid():
             form.save()
             success = True
-            successinfo = "添加"
+            successinfo = "Add"
             return render_to_response('activity/behavior.html',{
-                "title":'日常行为活动管理',
+                "title":'Daily Behavior Management',
                 'form':form,
                 'successinfo':successinfo,
                 'success':success,
                 'username':username},context_instance = RequestContext(request))
         else:
             return render_to_response('activity/behavior.html',{
-                "title":'日常行为活动管理',
+                "title":'Daily Behavior Management',
                 'form':form,
                 'username':username},context_instance = RequestContext(request))
 
@@ -91,16 +91,16 @@ def editbehavior(request):
         if form.is_valid():
             form.update()
             success = True
-            successinfo = "修改"
+            successinfo = "Edit"
             return render_to_response('activity/behavior.html',{
-                "title":'日常行为活动管理',
+                "title":'Daily Behavior Management',
                 'form':form,
                 'successinfo':successinfo,
                 'success':success,
                 'username':username},context_instance = RequestContext(request))
         else:
             return render_to_response('activity/behavior.html',{
-                "title":'日常行为活动管理',
+                "title":'Daily Behavior Management',
                 'form':form,
                 'username':username},context_instance = RequestContext(request))
 
@@ -117,9 +117,9 @@ def deletebehavior(request):
                 delbehavior = Behavior.objects.get(id = behavior_id)
                 delbehavior.delete()
                 success = True
-                successinfo = "删除"
+                successinfo = "Delete"
                 return render_to_response('activity/behavior.html',{
-                    "title":'日常行为活动管理',
+                    "title":'Daily Behavior Management',
                     'successinfo':successinfo,
                     'success':success,
                     'username':username},context_instance = RequestContext(request))
@@ -139,7 +139,7 @@ def development(request):
     username = request.user.username
 
     return render_to_response('activity/development.html',{
-            "title":'个性发展活动管理',
+            "title":'Talent Behavior Management',
             'username':username},context_instance = RequestContext(request))
 
 @login_required
@@ -186,16 +186,16 @@ def adddevelopment(request):
         if form.is_valid():
             form.save()
             success = True
-            successinfo = "添加"
+            successinfo = "Add"
             return render_to_response('activity/development.html',{
-                "title":'个性发展活动管理',
+                "title":'Talent Behavior Management',
                 'form':form,
                 'successinfo':successinfo,
                 'success':success,
                 'username':username},context_instance = RequestContext(request))
         else:
             return render_to_response('activity/development.html',{
-                "title":'个性发展活动管理',
+                "title":'Talent Behavior Management',
                 'form':form,
                 'username':username},context_instance = RequestContext(request))
 
@@ -210,16 +210,16 @@ def editdevelopment(request):
         if form.is_valid():
             form.update()
             success = True
-            successinfo = "修改"
+            successinfo = "Edit"
             return render_to_response('activity/development.html',{
-                "title":'个性发展活动管理',
+                "title":'Talent Behavior Management',
                 'form':form,
                 'successinfo':successinfo,
                 'success':success,
                 'username':username},context_instance = RequestContext(request))
         else:
             return render_to_response('activity/development.html',{
-                "title":'个性发展活动管理',
+                "title":'Talent Behavior Management',
                 'form':form,
                 'username':username},context_instance = RequestContext(request))
 
@@ -236,9 +236,9 @@ def deletedevelopment(request):
                 deldevelopment = Development.objects.get(id = development_id)
                 deldevelopment.delete()
                 success = True
-                successinfo = "删除"
+                successinfo = "Delete"
                 return render_to_response('activity/development.html',{
-                    "title":'个性发展活动管理',
+                    "title":'Talent Behavior Management',
                     'successinfo':successinfo,
                     'success':success,
                     'username':username},context_instance = RequestContext(request))

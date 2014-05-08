@@ -34,7 +34,7 @@ CREATE TABLE `assessment` (
 -- ----------------------------
 -- Records of assessment
 -- ----------------------------
-INSERT INTO `assessment` VALUES ('44', '2012年秋', '40', '30', '30', '2012-12-25', '2012-12-28');
+INSERT INTO `assessment` VALUES ('44', '2014Fall', '40', '30', '30', '2014-12-25', '2014-12-28');
 
 -- ----------------------------
 -- Table structure for `assessmentrecord`
@@ -270,13 +270,13 @@ CREATE TABLE `auth_user` (
 -- ----------------------------
 -- Records of auth_user
 -- ----------------------------
-INSERT INTO `auth_user` VALUES ('1', 'guomeng', '', '', 'gnemoug@gmail.com', 'sha1$65839$3a98a347d1a6306326aafd1ccc323f773f555120', '1', '1', '1', '2013-01-19 09:41:42', '2012-12-10 05:55:42');
-INSERT INTO `auth_user` VALUES ('41', '101110312', '', '', '', 'sha1$f265d$2dba19d5fe4360f0f4d20cf278b97e3daead5d96', '1', '1', '0', '2012-12-25 08:52:34', '2012-12-25 08:34:29');
-INSERT INTO `auth_user` VALUES ('42', '101110313', '', '', '', 'sha1$68917$9550a7bddad10e51ac899c132fb903f8d5d99174', '1', '1', '0', '2012-12-25 08:57:33', '2012-12-25 08:36:28');
-INSERT INTO `auth_user` VALUES ('43', '101110314', '', '', '', 'sha1$6f8b7$f7fc46006b082cb7e8ba9a3db067e21626d886e7', '1', '1', '0', '2012-12-25 08:43:28', '2012-12-25 08:37:05');
-INSERT INTO `auth_user` VALUES ('44', '101110315', '', '', '', 'sha1$202db$6917256dcd23f5d760658f3f8c2a41efc3f3d6ee', '1', '1', '0', '2012-12-25 08:43:54', '2012-12-25 08:37:28');
-INSERT INTO `auth_user` VALUES ('45', '101110101', '', '', '', 'sha1$0903e$bed4b52cd97109132412abf25081ee598f4fee5d', '1', '1', '0', '2012-12-25 08:45:14', '2012-12-25 08:37:49');
-INSERT INTO `auth_user` VALUES ('46', '101110112', '', '', '', 'sha1$b1b12$75319957624d83828c7ff76ba4784fb7fa8ee46f', '1', '1', '0', '2012-12-25 08:45:33', '2012-12-25 08:38:38');
+INSERT INTO `auth_user` VALUES ('1', 'guomeng', '', '', 'gnemoug@gmail.com', 'sha1$65839$3a98a347d1a6306326aafd1ccc323f773f555120', '1', '1', '1', '2013-01-19 09:41:42', '2014-12-10 05:55:42');
+INSERT INTO `auth_user` VALUES ('41', '101110312', '', '', '', 'sha1$f265d$2dba19d5fe4360f0f4d20cf278b97e3daead5d96', '1', '1', '0', '2014-12-25 08:52:34', '2014-12-25 08:34:29');
+INSERT INTO `auth_user` VALUES ('42', '101110313', '', '', '', 'sha1$68917$9550a7bddad10e51ac899c132fb903f8d5d99174', '1', '1', '0', '2014-12-25 08:57:33', '2014-12-25 08:36:28');
+INSERT INTO `auth_user` VALUES ('43', '101110314', '', '', '', 'sha1$6f8b7$f7fc46006b082cb7e8ba9a3db067e21626d886e7', '1', '1', '0', '2014-12-25 08:43:28', '2014-12-25 08:37:05');
+INSERT INTO `auth_user` VALUES ('44', '101110315', '', '', '', 'sha1$202db$6917256dcd23f5d760658f3f8c2a41efc3f3d6ee', '1', '1', '0', '2014-12-25 08:43:54', '2014-12-25 08:37:28');
+INSERT INTO `auth_user` VALUES ('45', '101110101', '', '', '', 'sha1$0903e$bed4b52cd97109132412abf25081ee598f4fee5d', '1', '1', '0', '2014-12-25 08:45:14', '2014-12-25 08:37:49');
+INSERT INTO `auth_user` VALUES ('46', '101110112', '', '', '', 'sha1$b1b12$75319957624d83828c7ff76ba4784fb7fa8ee46f', '1', '1', '0', '2014-12-25 08:45:33', '2014-12-25 08:38:38');
 
 -- ----------------------------
 -- Table structure for `auth_user_groups`
@@ -396,7 +396,7 @@ CREATE TABLE `comperformance` (
 -- ----------------------------
 -- Records of comperformance
 -- ----------------------------
-INSERT INTO `comperformance` VALUES ('23', '40', '35', '30', '5', '35', '2', '40', '55', '2012年秋');
+INSERT INTO `comperformance` VALUES ('23', '40', '35', '30', '5', '35', '2', '40', '55', '2014Fall');
 
 -- ----------------------------
 -- Table structure for `comperformancebehaviorscore`
@@ -535,135 +535,135 @@ CREATE TABLE `django_admin_log` (
 -- ----------------------------
 -- Records of django_admin_log
 -- ----------------------------
-INSERT INTO `django_admin_log` VALUES ('1', '2012-12-16 03:13:11', '1', '12', '2', '2012年秋', '1', '');
-INSERT INTO `django_admin_log` VALUES ('2', '2012-12-17 10:05:08', '1', '21', '1', '2012年秋郭猛-闫超', '1', '');
-INSERT INTO `django_admin_log` VALUES ('3', '2012-12-17 10:15:56', '1', '12', '3', '2011年秋', '1', '');
-INSERT INTO `django_admin_log` VALUES ('4', '2012-12-17 10:49:06', '1', '12', '4', '2011年春', '1', '');
-INSERT INTO `django_admin_log` VALUES ('5', '2012-12-17 10:49:28', '1', '12', '5', '2012年春', '1', '');
-INSERT INTO `django_admin_log` VALUES ('6', '2012-12-18 04:27:04', '1', '21', '1', '2012年秋郭猛-闫超', '3', '');
-INSERT INTO `django_admin_log` VALUES ('7', '2012-12-18 05:20:54', '1', '21', '2', '2012年秋苏向坤-王冠群', '3', '');
-INSERT INTO `django_admin_log` VALUES ('8', '2012-12-18 15:53:33', '1', '12', '31', '2012年秋', '2', '已修改 begindate 。');
-INSERT INTO `django_admin_log` VALUES ('9', '2012-12-18 20:01:51', '1', '21', '1919', '2012年秋郭猛-闫超', '2', '已修改 result 。');
-INSERT INTO `django_admin_log` VALUES ('10', '2012-12-18 20:02:06', '1', '21', '1920', '2012年秋郭猛-陈彦克', '2', '已修改 result 。');
-INSERT INTO `django_admin_log` VALUES ('11', '2012-12-18 20:02:18', '1', '21', '1921', '2012年秋郭猛-张琦', '2', '已修改 result 。');
-INSERT INTO `django_admin_log` VALUES ('12', '2012-12-18 20:02:37', '1', '21', '1924', '2012年秋郭猛-赵婷婷', '2', '已修改 result 。');
-INSERT INTO `django_admin_log` VALUES ('13', '2012-12-18 20:02:58', '1', '21', '1923', '2012年秋郭猛-常轶群', '2', '已修改 result 。');
-INSERT INTO `django_admin_log` VALUES ('14', '2012-12-18 20:03:15', '1', '21', '1930', '2012年秋郭猛-何鑫', '2', '已修改 result 。');
-INSERT INTO `django_admin_log` VALUES ('15', '2012-12-18 20:03:26', '1', '21', '1929', '2012年秋郭猛-朴铁军', '2', '已修改 result 。');
-INSERT INTO `django_admin_log` VALUES ('16', '2012-12-18 20:03:40', '1', '21', '1931', '2012年秋郭猛-王功勋', '2', '已修改 result 。');
-INSERT INTO `django_admin_log` VALUES ('17', '2012-12-19 14:31:47', '1', '14', '2', '2012年秋  101110112-->82.64', '3', '');
-INSERT INTO `django_admin_log` VALUES ('18', '2012-12-19 14:31:47', '1', '14', '1', '2012年秋  101110101-->72.38', '3', '');
-INSERT INTO `django_admin_log` VALUES ('19', '2012-12-19 19:54:46', '1', '15', '1', '社团联合会', '1', '');
-INSERT INTO `django_admin_log` VALUES ('20', '2012-12-19 19:55:05', '1', '15', '2', '卫生学院', '1', '');
-INSERT INTO `django_admin_log` VALUES ('21', '2012-12-19 19:55:45', '1', '15', '3', '征文比赛', '1', '');
-INSERT INTO `django_admin_log` VALUES ('22', '2012-12-19 19:55:59', '1', '15', '4', '志愿者', '1', '');
-INSERT INTO `django_admin_log` VALUES ('23', '2012-12-19 22:05:59', '1', '15', '5', '123', '3', '');
-INSERT INTO `django_admin_log` VALUES ('24', '2012-12-20 08:41:06', '1', '16', '1', '班委', '1', '');
-INSERT INTO `django_admin_log` VALUES ('25', '2012-12-20 08:41:15', '1', '16', '2', '学生会', '1', '');
-INSERT INTO `django_admin_log` VALUES ('26', '2012-12-20 08:41:47', '1', '16', '3', '省级以上竞赛', '1', '');
-INSERT INTO `django_admin_log` VALUES ('27', '2012-12-20 08:42:05', '1', '16', '4', '软件工程师', '1', '');
-INSERT INTO `django_admin_log` VALUES ('28', '2012-12-20 13:58:00', '1', '17', '1', '2012年秋', '1', '');
-INSERT INTO `django_admin_log` VALUES ('29', '2012-12-20 14:23:35', '1', '24', '9', '综合成绩分数：88.12互评分数：37.78', '1', '');
-INSERT INTO `django_admin_log` VALUES ('30', '2012-12-20 14:26:02', '1', '18', '1', '101110312-->个性发展分数:2.0', '1', '');
-INSERT INTO `django_admin_log` VALUES ('31', '2012-12-20 14:26:20', '1', '20', '2', '101110312-->体能分数：5.0', '1', '');
-INSERT INTO `django_admin_log` VALUES ('32', '2012-12-20 14:26:31', '1', '19', '2', '101110312-->日常行为分数:5.0', '1', '');
-INSERT INTO `django_admin_log` VALUES ('33', '2012-12-20 14:26:57', '1', '18', '1', '101110312-->个性发展分数:2.0', '3', '');
-INSERT INTO `django_admin_log` VALUES ('34', '2012-12-20 14:27:08', '1', '20', '2', '101110312-->体能分数：5.0', '3', '');
-INSERT INTO `django_admin_log` VALUES ('35', '2012-12-20 14:27:28', '1', '19', '2', '101110312-->日常行为分数:5.0', '3', '');
-INSERT INTO `django_admin_log` VALUES ('36', '2012-12-20 14:28:00', '1', '24', '9', '101110312-->综合成绩分数：88.12互评分数：37.78', '3', '');
-INSERT INTO `django_admin_log` VALUES ('37', '2012-12-20 14:28:13', '1', '17', '1', '2012年秋', '3', '');
-INSERT INTO `django_admin_log` VALUES ('38', '2012-12-21 14:03:15', '1', '17', '2', '2012年秋', '1', '');
-INSERT INTO `django_admin_log` VALUES ('39', '2012-12-21 15:32:16', '1', '18', '2', '101110312-->个性发展分数:2.0', '1', '');
-INSERT INTO `django_admin_log` VALUES ('40', '2012-12-21 15:32:21', '1', '18', '2', '101110312-->个性发展分数:2.0', '3', '');
-INSERT INTO `django_admin_log` VALUES ('41', '2012-12-22 06:23:55', '1', '24', '15', '101110112-->综合成绩分数：107.64互评分数：0.0', '3', '');
-INSERT INTO `django_admin_log` VALUES ('42', '2012-12-22 06:23:55', '1', '24', '14', '101110101-->综合成绩分数：102.33互评分数：0.0', '3', '');
-INSERT INTO `django_admin_log` VALUES ('43', '2012-12-22 06:23:55', '1', '24', '13', '101110315-->综合成绩分数：119.12互评分数：0.0', '3', '');
-INSERT INTO `django_admin_log` VALUES ('44', '2012-12-22 06:23:55', '1', '24', '12', '101110314-->综合成绩分数：106.45互评分数：0.0', '3', '');
-INSERT INTO `django_admin_log` VALUES ('45', '2012-12-22 06:23:55', '1', '24', '11', '101110313-->综合成绩分数：112.89互评分数：0.0', '3', '');
-INSERT INTO `django_admin_log` VALUES ('46', '2012-12-22 06:23:55', '1', '24', '10', '101110312-->综合成绩分数：116.38互评分数：0.0', '3', '');
-INSERT INTO `django_admin_log` VALUES ('47', '2012-12-22 16:51:43', '1', '19', '3', '101110101-->日常行为分数:None', '3', '');
-INSERT INTO `django_admin_log` VALUES ('48', '2012-12-22 16:52:38', '1', '19', '5', '101110101-->日常行为分数:None', '3', '');
-INSERT INTO `django_admin_log` VALUES ('49', '2012-12-22 16:59:22', '1', '19', '7', '101110101-->日常行为分数:None', '3', '');
-INSERT INTO `django_admin_log` VALUES ('50', '2012-12-22 17:05:56', '1', '19', '10', '101110101-->日常行为分数:None', '3', '');
-INSERT INTO `django_admin_log` VALUES ('51', '2012-12-22 17:05:56', '1', '19', '9', '101110312-->日常行为分数:2.0', '3', '');
-INSERT INTO `django_admin_log` VALUES ('52', '2012-12-22 17:05:56', '1', '19', '8', '101110112-->日常行为分数:2.0', '3', '');
-INSERT INTO `django_admin_log` VALUES ('53', '2012-12-22 17:05:56', '1', '19', '6', '101110101-->日常行为分数:5.0', '3', '');
-INSERT INTO `django_admin_log` VALUES ('54', '2012-12-22 17:05:57', '1', '19', '4', '101110101-->日常行为分数:5.0', '3', '');
-INSERT INTO `django_admin_log` VALUES ('55', '2012-12-22 17:16:24', '1', '20', '3', '101110101-->体能分数：None', '3', '');
-INSERT INTO `django_admin_log` VALUES ('56', '2012-12-22 20:34:16', '1', '17', '19', '2012年秋', '3', '');
-INSERT INTO `django_admin_log` VALUES ('57', '2012-12-22 20:34:28', '1', '10', '11', '1011101', '3', '');
-INSERT INTO `django_admin_log` VALUES ('58', '2012-12-22 20:34:28', '1', '10', '1', '1011103', '3', '');
-INSERT INTO `django_admin_log` VALUES ('59', '2012-12-22 20:34:51', '1', '15', '6', '学校卫生', '3', '');
-INSERT INTO `django_admin_log` VALUES ('60', '2012-12-22 20:34:51', '1', '15', '5', '篮球赛', '3', '');
-INSERT INTO `django_admin_log` VALUES ('61', '2012-12-22 20:34:51', '1', '15', '4', '志愿者', '3', '');
-INSERT INTO `django_admin_log` VALUES ('62', '2012-12-22 20:34:51', '1', '15', '2', '卫生学院', '3', '');
-INSERT INTO `django_admin_log` VALUES ('63', '2012-12-22 20:34:51', '1', '15', '1', '社团联合会', '3', '');
-INSERT INTO `django_admin_log` VALUES ('64', '2012-12-22 20:35:02', '1', '16', '6', '导员助理', '3', '');
-INSERT INTO `django_admin_log` VALUES ('65', '2012-12-22 20:35:02', '1', '16', '5', '校电赛', '3', '');
-INSERT INTO `django_admin_log` VALUES ('66', '2012-12-22 20:35:02', '1', '16', '4', '软件工程师', '3', '');
-INSERT INTO `django_admin_log` VALUES ('67', '2012-12-22 20:35:02', '1', '16', '3', '省级以上竞赛', '3', '');
-INSERT INTO `django_admin_log` VALUES ('68', '2012-12-22 20:35:02', '1', '16', '2', '学生会', '3', '');
-INSERT INTO `django_admin_log` VALUES ('69', '2012-12-22 20:35:14', '1', '12', '39', '2013年春', '3', '');
-INSERT INTO `django_admin_log` VALUES ('70', '2012-12-22 20:35:14', '1', '12', '38', '2012年秋', '3', '');
-INSERT INTO `django_admin_log` VALUES ('71', '2012-12-22 20:40:15', '1', '3', '14', '101110101', '3', '');
-INSERT INTO `django_admin_log` VALUES ('72', '2012-12-22 20:40:15', '1', '3', '15', '101110112', '3', '');
-INSERT INTO `django_admin_log` VALUES ('73', '2012-12-22 20:40:15', '1', '3', '3', '101110312', '3', '');
-INSERT INTO `django_admin_log` VALUES ('74', '2012-12-22 20:40:15', '1', '3', '4', '101110313', '3', '');
-INSERT INTO `django_admin_log` VALUES ('75', '2012-12-22 20:40:15', '1', '3', '5', '101110314', '3', '');
-INSERT INTO `django_admin_log` VALUES ('76', '2012-12-22 20:40:15', '1', '3', '6', '101110315', '3', '');
-INSERT INTO `django_admin_log` VALUES ('77', '2012-12-22 21:00:33', '1', '17', '20', '2012年秋', '3', '');
-INSERT INTO `django_admin_log` VALUES ('78', '2012-12-22 21:00:44', '1', '10', '17', '1011101', '3', '');
-INSERT INTO `django_admin_log` VALUES ('79', '2012-12-22 21:00:44', '1', '10', '15', '1011104', '3', '');
-INSERT INTO `django_admin_log` VALUES ('80', '2012-12-22 21:00:44', '1', '10', '14', '1011103', '3', '');
-INSERT INTO `django_admin_log` VALUES ('81', '2012-12-22 21:00:54', '1', '16', '9', '软件工程师', '3', '');
-INSERT INTO `django_admin_log` VALUES ('82', '2012-12-22 21:00:54', '1', '16', '8', '省赛', '3', '');
-INSERT INTO `django_admin_log` VALUES ('83', '2012-12-22 21:00:54', '1', '16', '7', '学生会', '3', '');
-INSERT INTO `django_admin_log` VALUES ('84', '2012-12-22 21:01:02', '1', '12', '40', '2012年秋', '3', '');
-INSERT INTO `django_admin_log` VALUES ('85', '2012-12-22 21:01:28', '1', '15', '9', '运动会', '3', '');
-INSERT INTO `django_admin_log` VALUES ('86', '2012-12-22 21:01:28', '1', '15', '8', '编程大赛', '3', '');
-INSERT INTO `django_admin_log` VALUES ('87', '2012-12-22 21:01:28', '1', '15', '7', '卫生', '3', '');
-INSERT INTO `django_admin_log` VALUES ('88', '2012-12-22 21:07:25', '1', '3', '25', '101110101', '3', '');
-INSERT INTO `django_admin_log` VALUES ('89', '2012-12-22 21:07:25', '1', '3', '26', '101110112', '3', '');
-INSERT INTO `django_admin_log` VALUES ('90', '2012-12-22 21:07:25', '1', '3', '24', '101110201', '3', '');
-INSERT INTO `django_admin_log` VALUES ('91', '2012-12-22 21:07:25', '1', '3', '18', '101110312', '3', '');
-INSERT INTO `django_admin_log` VALUES ('92', '2012-12-22 21:07:25', '1', '3', '19', '101110313', '3', '');
-INSERT INTO `django_admin_log` VALUES ('93', '2012-12-22 21:07:25', '1', '3', '21', '101110314', '3', '');
-INSERT INTO `django_admin_log` VALUES ('94', '2012-12-22 21:07:25', '1', '3', '20', '101110315', '3', '');
-INSERT INTO `django_admin_log` VALUES ('95', '2012-12-22 21:07:25', '1', '3', '22', '101110401', '3', '');
-INSERT INTO `django_admin_log` VALUES ('96', '2012-12-22 21:07:25', '1', '3', '23', '101110405', '3', '');
-INSERT INTO `django_admin_log` VALUES ('97', '2012-12-23 10:00:18', '1', '17', '21', '2012年秋', '3', '');
-INSERT INTO `django_admin_log` VALUES ('98', '2012-12-23 10:00:29', '1', '10', '19', '1011103', '3', '');
-INSERT INTO `django_admin_log` VALUES ('99', '2012-12-23 10:00:29', '1', '10', '18', '1011101', '3', '');
-INSERT INTO `django_admin_log` VALUES ('100', '2012-12-23 10:02:37', '1', '16', '12', '软件工程师', '3', '');
-INSERT INTO `django_admin_log` VALUES ('101', '2012-12-23 10:02:37', '1', '16', '11', 'acm', '3', '');
-INSERT INTO `django_admin_log` VALUES ('102', '2012-12-23 10:02:37', '1', '16', '10', '学生会', '3', '');
-INSERT INTO `django_admin_log` VALUES ('103', '2012-12-23 10:02:55', '1', '15', '11', '篮球赛', '3', '');
-INSERT INTO `django_admin_log` VALUES ('104', '2012-12-23 10:02:55', '1', '15', '10', '卫生', '3', '');
-INSERT INTO `django_admin_log` VALUES ('105', '2012-12-23 10:03:13', '1', '12', '42', '2012年秋', '3', '');
-INSERT INTO `django_admin_log` VALUES ('106', '2012-12-23 10:03:37', '1', '3', '27', '101110101', '3', '');
-INSERT INTO `django_admin_log` VALUES ('107', '2012-12-23 10:03:37', '1', '3', '33', '101110103', '3', '');
-INSERT INTO `django_admin_log` VALUES ('108', '2012-12-23 10:03:37', '1', '3', '28', '101110112', '3', '');
-INSERT INTO `django_admin_log` VALUES ('109', '2012-12-23 10:03:37', '1', '3', '29', '101110312', '3', '');
-INSERT INTO `django_admin_log` VALUES ('110', '2012-12-23 10:03:37', '1', '3', '31', '101110313', '3', '');
-INSERT INTO `django_admin_log` VALUES ('111', '2012-12-23 10:03:37', '1', '3', '30', '101110314', '3', '');
-INSERT INTO `django_admin_log` VALUES ('112', '2012-12-23 10:03:37', '1', '3', '32', '101110315', '3', '');
-INSERT INTO `django_admin_log` VALUES ('113', '2012-12-23 11:09:12', '1', '3', '41', 'aabbcc', '1', '');
-INSERT INTO `django_admin_log` VALUES ('114', '2012-12-23 11:09:51', '1', '3', '41', 'aabbc', '2', '已修改 username 。');
-INSERT INTO `django_admin_log` VALUES ('115', '2012-12-23 11:10:22', '1', '3', '41', 'aabbc', '3', '');
-INSERT INTO `django_admin_log` VALUES ('116', '2012-12-25 08:26:36', '1', '3', '34', '101110101', '3', '');
-INSERT INTO `django_admin_log` VALUES ('117', '2012-12-25 08:26:37', '1', '3', '35', '101110112', '3', '');
-INSERT INTO `django_admin_log` VALUES ('118', '2012-12-25 08:26:37', '1', '3', '40', '101110312', '3', '');
-INSERT INTO `django_admin_log` VALUES ('119', '2012-12-25 08:26:37', '1', '3', '36', '101110313', '3', '');
-INSERT INTO `django_admin_log` VALUES ('120', '2012-12-25 08:26:37', '1', '3', '37', '101110314', '3', '');
-INSERT INTO `django_admin_log` VALUES ('121', '2012-12-25 08:26:37', '1', '3', '38', '101110315', '3', '');
-INSERT INTO `django_admin_log` VALUES ('122', '2012-12-25 08:26:52', '1', '16', '14', '省级以上竞赛', '3', '');
-INSERT INTO `django_admin_log` VALUES ('123', '2012-12-25 08:26:52', '1', '16', '13', '学生会', '3', '');
-INSERT INTO `django_admin_log` VALUES ('124', '2012-12-25 08:27:06', '1', '12', '43', '2012年秋', '3', '');
-INSERT INTO `django_admin_log` VALUES ('125', '2012-12-25 08:28:10', '1', '15', '13', '卫生', '3', '');
-INSERT INTO `django_admin_log` VALUES ('126', '2012-12-25 08:28:10', '1', '15', '12', '运动会', '3', '');
-INSERT INTO `django_admin_log` VALUES ('127', '2012-12-25 08:28:20', '1', '10', '21', '1011103', '3', '');
-INSERT INTO `django_admin_log` VALUES ('128', '2012-12-25 08:28:20', '1', '10', '20', '1011101', '3', '');
-INSERT INTO `django_admin_log` VALUES ('129', '2012-12-25 08:28:33', '1', '17', '22', '2012年秋', '3', '');
+INSERT INTO `django_admin_log` VALUES ('1', '2014-12-16 03:13:11', '1', '12', '2', '2014Fall', '1', '');
+INSERT INTO `django_admin_log` VALUES ('2', '2014-12-17 10:05:08', '1', '21', '1', '2014Fall郭猛-闫超', '1', '');
+INSERT INTO `django_admin_log` VALUES ('3', '2014-12-17 10:15:56', '1', '12', '3', '2011Fall', '1', '');
+INSERT INTO `django_admin_log` VALUES ('4', '2014-12-17 10:49:06', '1', '12', '4', '2011年春', '1', '');
+INSERT INTO `django_admin_log` VALUES ('5', '2014-12-17 10:49:28', '1', '12', '5', '2014年春', '1', '');
+INSERT INTO `django_admin_log` VALUES ('6', '2014-12-18 04:27:04', '1', '21', '1', '2014Fall郭猛-闫超', '3', '');
+INSERT INTO `django_admin_log` VALUES ('7', '2014-12-18 05:20:54', '1', '21', '2', '2014Fall苏向坤-王冠群', '3', '');
+INSERT INTO `django_admin_log` VALUES ('8', '2014-12-18 15:53:33', '1', '12', '31', '2014Fall', '2', '已Edit begindate 。');
+INSERT INTO `django_admin_log` VALUES ('9', '2014-12-18 20:01:51', '1', '21', '1919', '2014Fall郭猛-闫超', '2', '已Edit result 。');
+INSERT INTO `django_admin_log` VALUES ('10', '2014-12-18 20:02:06', '1', '21', '1920', '2014Fall郭猛-陈彦克', '2', '已Edit result 。');
+INSERT INTO `django_admin_log` VALUES ('11', '2014-12-18 20:02:18', '1', '21', '1921', '2014Fall郭猛-张琦', '2', '已Edit result 。');
+INSERT INTO `django_admin_log` VALUES ('12', '2014-12-18 20:02:37', '1', '21', '1924', '2014Fall郭猛-赵婷婷', '2', '已Edit result 。');
+INSERT INTO `django_admin_log` VALUES ('13', '2014-12-18 20:02:58', '1', '21', '1923', '2014Fall郭猛-常轶群', '2', '已Edit result 。');
+INSERT INTO `django_admin_log` VALUES ('14', '2014-12-18 20:03:15', '1', '21', '1930', '2014Fall郭猛-何鑫', '2', '已Edit result 。');
+INSERT INTO `django_admin_log` VALUES ('15', '2014-12-18 20:03:26', '1', '21', '1929', '2014Fall郭猛-朴铁军', '2', '已Edit result 。');
+INSERT INTO `django_admin_log` VALUES ('16', '2014-12-18 20:03:40', '1', '21', '1931', '2014Fall郭猛-王功勋', '2', '已Edit result 。');
+INSERT INTO `django_admin_log` VALUES ('17', '2014-12-19 14:31:47', '1', '14', '2', '2014Fall  101110112-->82.64', '3', '');
+INSERT INTO `django_admin_log` VALUES ('18', '2014-12-19 14:31:47', '1', '14', '1', '2014Fall  101110101-->72.38', '3', '');
+INSERT INTO `django_admin_log` VALUES ('19', '2014-12-19 19:54:46', '1', '15', '1', '社团联合会', '1', '');
+INSERT INTO `django_admin_log` VALUES ('20', '2014-12-19 19:55:05', '1', '15', '2', '卫生学院', '1', '');
+INSERT INTO `django_admin_log` VALUES ('21', '2014-12-19 19:55:45', '1', '15', '3', '征文比赛', '1', '');
+INSERT INTO `django_admin_log` VALUES ('22', '2014-12-19 19:55:59', '1', '15', '4', '志愿者', '1', '');
+INSERT INTO `django_admin_log` VALUES ('23', '2014-12-19 22:05:59', '1', '15', '5', '123', '3', '');
+INSERT INTO `django_admin_log` VALUES ('24', '2014-12-20 08:41:06', '1', '16', '1', '班委', '1', '');
+INSERT INTO `django_admin_log` VALUES ('25', '2014-12-20 08:41:15', '1', '16', '2', '学生会', '1', '');
+INSERT INTO `django_admin_log` VALUES ('26', '2014-12-20 08:41:47', '1', '16', '3', '省级以上竞赛', '1', '');
+INSERT INTO `django_admin_log` VALUES ('27', '2014-12-20 08:42:05', '1', '16', '4', '软件工程师', '1', '');
+INSERT INTO `django_admin_log` VALUES ('28', '2014-12-20 13:58:00', '1', '17', '1', '2014Fall', '1', '');
+INSERT INTO `django_admin_log` VALUES ('29', '2014-12-20 14:23:35', '1', '24', '9', '综合GPA分数：88.12互评分数：37.78', '1', '');
+INSERT INTO `django_admin_log` VALUES ('30', '2014-12-20 14:26:02', '1', '18', '1', '101110312-->个性发展分数:2.0', '1', '');
+INSERT INTO `django_admin_log` VALUES ('31', '2014-12-20 14:26:20', '1', '20', '2', '101110312-->体能分数：5.0', '1', '');
+INSERT INTO `django_admin_log` VALUES ('32', '2014-12-20 14:26:31', '1', '19', '2', '101110312-->日常行为分数:5.0', '1', '');
+INSERT INTO `django_admin_log` VALUES ('33', '2014-12-20 14:26:57', '1', '18', '1', '101110312-->个性发展分数:2.0', '3', '');
+INSERT INTO `django_admin_log` VALUES ('34', '2014-12-20 14:27:08', '1', '20', '2', '101110312-->体能分数：5.0', '3', '');
+INSERT INTO `django_admin_log` VALUES ('35', '2014-12-20 14:27:28', '1', '19', '2', '101110312-->日常行为分数:5.0', '3', '');
+INSERT INTO `django_admin_log` VALUES ('36', '2014-12-20 14:28:00', '1', '24', '9', '101110312-->综合GPA分数：88.12互评分数：37.78', '3', '');
+INSERT INTO `django_admin_log` VALUES ('37', '2014-12-20 14:28:13', '1', '17', '1', '2014Fall', '3', '');
+INSERT INTO `django_admin_log` VALUES ('38', '2014-12-21 14:03:15', '1', '17', '2', '2014Fall', '1', '');
+INSERT INTO `django_admin_log` VALUES ('39', '2014-12-21 15:32:16', '1', '18', '2', '101110312-->个性发展分数:2.0', '1', '');
+INSERT INTO `django_admin_log` VALUES ('40', '2014-12-21 15:32:21', '1', '18', '2', '101110312-->个性发展分数:2.0', '3', '');
+INSERT INTO `django_admin_log` VALUES ('41', '2014-12-22 06:23:55', '1', '24', '15', '101110112-->综合GPA分数：107.64互评分数：0.0', '3', '');
+INSERT INTO `django_admin_log` VALUES ('42', '2014-12-22 06:23:55', '1', '24', '14', '101110101-->综合GPA分数：102.33互评分数：0.0', '3', '');
+INSERT INTO `django_admin_log` VALUES ('43', '2014-12-22 06:23:55', '1', '24', '13', '101110315-->综合GPA分数：119.12互评分数：0.0', '3', '');
+INSERT INTO `django_admin_log` VALUES ('44', '2014-12-22 06:23:55', '1', '24', '12', '101110314-->综合GPA分数：106.45互评分数：0.0', '3', '');
+INSERT INTO `django_admin_log` VALUES ('45', '2014-12-22 06:23:55', '1', '24', '11', '101110313-->综合GPA分数：112.89互评分数：0.0', '3', '');
+INSERT INTO `django_admin_log` VALUES ('46', '2014-12-22 06:23:55', '1', '24', '10', '101110312-->综合GPA分数：116.38互评分数：0.0', '3', '');
+INSERT INTO `django_admin_log` VALUES ('47', '2014-12-22 16:51:43', '1', '19', '3', '101110101-->日常行为分数:None', '3', '');
+INSERT INTO `django_admin_log` VALUES ('48', '2014-12-22 16:52:38', '1', '19', '5', '101110101-->日常行为分数:None', '3', '');
+INSERT INTO `django_admin_log` VALUES ('49', '2014-12-22 16:59:22', '1', '19', '7', '101110101-->日常行为分数:None', '3', '');
+INSERT INTO `django_admin_log` VALUES ('50', '2014-12-22 17:05:56', '1', '19', '10', '101110101-->日常行为分数:None', '3', '');
+INSERT INTO `django_admin_log` VALUES ('51', '2014-12-22 17:05:56', '1', '19', '9', '101110312-->日常行为分数:2.0', '3', '');
+INSERT INTO `django_admin_log` VALUES ('52', '2014-12-22 17:05:56', '1', '19', '8', '101110112-->日常行为分数:2.0', '3', '');
+INSERT INTO `django_admin_log` VALUES ('53', '2014-12-22 17:05:56', '1', '19', '6', '101110101-->日常行为分数:5.0', '3', '');
+INSERT INTO `django_admin_log` VALUES ('54', '2014-12-22 17:05:57', '1', '19', '4', '101110101-->日常行为分数:5.0', '3', '');
+INSERT INTO `django_admin_log` VALUES ('55', '2014-12-22 17:16:24', '1', '20', '3', '101110101-->体能分数：None', '3', '');
+INSERT INTO `django_admin_log` VALUES ('56', '2014-12-22 20:34:16', '1', '17', '19', '2014Fall', '3', '');
+INSERT INTO `django_admin_log` VALUES ('57', '2014-12-22 20:34:28', '1', '10', '11', '1011101', '3', '');
+INSERT INTO `django_admin_log` VALUES ('58', '2014-12-22 20:34:28', '1', '10', '1', '1011103', '3', '');
+INSERT INTO `django_admin_log` VALUES ('59', '2014-12-22 20:34:51', '1', '15', '6', '学校卫生', '3', '');
+INSERT INTO `django_admin_log` VALUES ('60', '2014-12-22 20:34:51', '1', '15', '5', '篮球赛', '3', '');
+INSERT INTO `django_admin_log` VALUES ('61', '2014-12-22 20:34:51', '1', '15', '4', '志愿者', '3', '');
+INSERT INTO `django_admin_log` VALUES ('62', '2014-12-22 20:34:51', '1', '15', '2', '卫生学院', '3', '');
+INSERT INTO `django_admin_log` VALUES ('63', '2014-12-22 20:34:51', '1', '15', '1', '社团联合会', '3', '');
+INSERT INTO `django_admin_log` VALUES ('64', '2014-12-22 20:35:02', '1', '16', '6', '导员助理', '3', '');
+INSERT INTO `django_admin_log` VALUES ('65', '2014-12-22 20:35:02', '1', '16', '5', '校电赛', '3', '');
+INSERT INTO `django_admin_log` VALUES ('66', '2014-12-22 20:35:02', '1', '16', '4', '软件工程师', '3', '');
+INSERT INTO `django_admin_log` VALUES ('67', '2014-12-22 20:35:02', '1', '16', '3', '省级以上竞赛', '3', '');
+INSERT INTO `django_admin_log` VALUES ('68', '2014-12-22 20:35:02', '1', '16', '2', '学生会', '3', '');
+INSERT INTO `django_admin_log` VALUES ('69', '2014-12-22 20:35:14', '1', '12', '39', '2013年春', '3', '');
+INSERT INTO `django_admin_log` VALUES ('70', '2014-12-22 20:35:14', '1', '12', '38', '2014Fall', '3', '');
+INSERT INTO `django_admin_log` VALUES ('71', '2014-12-22 20:40:15', '1', '3', '14', '101110101', '3', '');
+INSERT INTO `django_admin_log` VALUES ('72', '2014-12-22 20:40:15', '1', '3', '15', '101110112', '3', '');
+INSERT INTO `django_admin_log` VALUES ('73', '2014-12-22 20:40:15', '1', '3', '3', '101110312', '3', '');
+INSERT INTO `django_admin_log` VALUES ('74', '2014-12-22 20:40:15', '1', '3', '4', '101110313', '3', '');
+INSERT INTO `django_admin_log` VALUES ('75', '2014-12-22 20:40:15', '1', '3', '5', '101110314', '3', '');
+INSERT INTO `django_admin_log` VALUES ('76', '2014-12-22 20:40:15', '1', '3', '6', '101110315', '3', '');
+INSERT INTO `django_admin_log` VALUES ('77', '2014-12-22 21:00:33', '1', '17', '20', '2014Fall', '3', '');
+INSERT INTO `django_admin_log` VALUES ('78', '2014-12-22 21:00:44', '1', '10', '17', '1011101', '3', '');
+INSERT INTO `django_admin_log` VALUES ('79', '2014-12-22 21:00:44', '1', '10', '15', '1011104', '3', '');
+INSERT INTO `django_admin_log` VALUES ('80', '2014-12-22 21:00:44', '1', '10', '14', '1011103', '3', '');
+INSERT INTO `django_admin_log` VALUES ('81', '2014-12-22 21:00:54', '1', '16', '9', '软件工程师', '3', '');
+INSERT INTO `django_admin_log` VALUES ('82', '2014-12-22 21:00:54', '1', '16', '8', '省赛', '3', '');
+INSERT INTO `django_admin_log` VALUES ('83', '2014-12-22 21:00:54', '1', '16', '7', '学生会', '3', '');
+INSERT INTO `django_admin_log` VALUES ('84', '2014-12-22 21:01:02', '1', '12', '40', '2014Fall', '3', '');
+INSERT INTO `django_admin_log` VALUES ('85', '2014-12-22 21:01:28', '1', '15', '9', '运动会', '3', '');
+INSERT INTO `django_admin_log` VALUES ('86', '2014-12-22 21:01:28', '1', '15', '8', '编程大赛', '3', '');
+INSERT INTO `django_admin_log` VALUES ('87', '2014-12-22 21:01:28', '1', '15', '7', '卫生', '3', '');
+INSERT INTO `django_admin_log` VALUES ('88', '2014-12-22 21:07:25', '1', '3', '25', '101110101', '3', '');
+INSERT INTO `django_admin_log` VALUES ('89', '2014-12-22 21:07:25', '1', '3', '26', '101110112', '3', '');
+INSERT INTO `django_admin_log` VALUES ('90', '2014-12-22 21:07:25', '1', '3', '24', '101110201', '3', '');
+INSERT INTO `django_admin_log` VALUES ('91', '2014-12-22 21:07:25', '1', '3', '18', '101110312', '3', '');
+INSERT INTO `django_admin_log` VALUES ('92', '2014-12-22 21:07:25', '1', '3', '19', '101110313', '3', '');
+INSERT INTO `django_admin_log` VALUES ('93', '2014-12-22 21:07:25', '1', '3', '21', '101110314', '3', '');
+INSERT INTO `django_admin_log` VALUES ('94', '2014-12-22 21:07:25', '1', '3', '20', '101110315', '3', '');
+INSERT INTO `django_admin_log` VALUES ('95', '2014-12-22 21:07:25', '1', '3', '22', '101110401', '3', '');
+INSERT INTO `django_admin_log` VALUES ('96', '2014-12-22 21:07:25', '1', '3', '23', '101110405', '3', '');
+INSERT INTO `django_admin_log` VALUES ('97', '2014-12-23 10:00:18', '1', '17', '21', '2014Fall', '3', '');
+INSERT INTO `django_admin_log` VALUES ('98', '2014-12-23 10:00:29', '1', '10', '19', '1011103', '3', '');
+INSERT INTO `django_admin_log` VALUES ('99', '2014-12-23 10:00:29', '1', '10', '18', '1011101', '3', '');
+INSERT INTO `django_admin_log` VALUES ('100', '2014-12-23 10:02:37', '1', '16', '12', '软件工程师', '3', '');
+INSERT INTO `django_admin_log` VALUES ('101', '2014-12-23 10:02:37', '1', '16', '11', 'acm', '3', '');
+INSERT INTO `django_admin_log` VALUES ('102', '2014-12-23 10:02:37', '1', '16', '10', '学生会', '3', '');
+INSERT INTO `django_admin_log` VALUES ('103', '2014-12-23 10:02:55', '1', '15', '11', '篮球赛', '3', '');
+INSERT INTO `django_admin_log` VALUES ('104', '2014-12-23 10:02:55', '1', '15', '10', '卫生', '3', '');
+INSERT INTO `django_admin_log` VALUES ('105', '2014-12-23 10:03:13', '1', '12', '42', '2014Fall', '3', '');
+INSERT INTO `django_admin_log` VALUES ('106', '2014-12-23 10:03:37', '1', '3', '27', '101110101', '3', '');
+INSERT INTO `django_admin_log` VALUES ('107', '2014-12-23 10:03:37', '1', '3', '33', '101110103', '3', '');
+INSERT INTO `django_admin_log` VALUES ('108', '2014-12-23 10:03:37', '1', '3', '28', '101110112', '3', '');
+INSERT INTO `django_admin_log` VALUES ('109', '2014-12-23 10:03:37', '1', '3', '29', '101110312', '3', '');
+INSERT INTO `django_admin_log` VALUES ('110', '2014-12-23 10:03:37', '1', '3', '31', '101110313', '3', '');
+INSERT INTO `django_admin_log` VALUES ('111', '2014-12-23 10:03:37', '1', '3', '30', '101110314', '3', '');
+INSERT INTO `django_admin_log` VALUES ('112', '2014-12-23 10:03:37', '1', '3', '32', '101110315', '3', '');
+INSERT INTO `django_admin_log` VALUES ('113', '2014-12-23 11:09:12', '1', '3', '41', 'aabbcc', '1', '');
+INSERT INTO `django_admin_log` VALUES ('114', '2014-12-23 11:09:51', '1', '3', '41', 'aabbc', '2', '已Edit username 。');
+INSERT INTO `django_admin_log` VALUES ('115', '2014-12-23 11:10:22', '1', '3', '41', 'aabbc', '3', '');
+INSERT INTO `django_admin_log` VALUES ('116', '2014-12-25 08:26:36', '1', '3', '34', '101110101', '3', '');
+INSERT INTO `django_admin_log` VALUES ('117', '2014-12-25 08:26:37', '1', '3', '35', '101110112', '3', '');
+INSERT INTO `django_admin_log` VALUES ('118', '2014-12-25 08:26:37', '1', '3', '40', '101110312', '3', '');
+INSERT INTO `django_admin_log` VALUES ('119', '2014-12-25 08:26:37', '1', '3', '36', '101110313', '3', '');
+INSERT INTO `django_admin_log` VALUES ('120', '2014-12-25 08:26:37', '1', '3', '37', '101110314', '3', '');
+INSERT INTO `django_admin_log` VALUES ('121', '2014-12-25 08:26:37', '1', '3', '38', '101110315', '3', '');
+INSERT INTO `django_admin_log` VALUES ('122', '2014-12-25 08:26:52', '1', '16', '14', '省级以上竞赛', '3', '');
+INSERT INTO `django_admin_log` VALUES ('123', '2014-12-25 08:26:52', '1', '16', '13', '学生会', '3', '');
+INSERT INTO `django_admin_log` VALUES ('124', '2014-12-25 08:27:06', '1', '12', '43', '2014Fall', '3', '');
+INSERT INTO `django_admin_log` VALUES ('125', '2014-12-25 08:28:10', '1', '15', '13', '卫生', '3', '');
+INSERT INTO `django_admin_log` VALUES ('126', '2014-12-25 08:28:10', '1', '15', '12', '运动会', '3', '');
+INSERT INTO `django_admin_log` VALUES ('127', '2014-12-25 08:28:20', '1', '10', '21', '1011103', '3', '');
+INSERT INTO `django_admin_log` VALUES ('128', '2014-12-25 08:28:20', '1', '10', '20', '1011101', '3', '');
+INSERT INTO `django_admin_log` VALUES ('129', '2014-12-25 08:28:33', '1', '17', '22', '2014Fall', '3', '');
 
 -- ----------------------------
 -- Table structure for `django_content_type`
@@ -723,21 +723,21 @@ CREATE TABLE `django_session` (
 INSERT INTO `django_session` VALUES ('008bf666be8a0fd730534848b6580c72', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2013-01-06 09:44:18');
 INSERT INTO `django_session` VALUES ('0b3aaeb7ef95c35ad9fab2764b710510', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2013-01-06 08:52:16');
 INSERT INTO `django_session` VALUES ('1f3fadc96f1dd829588a45c500ebbd17', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2013-01-04 07:34:21');
-INSERT INTO `django_session` VALUES ('25cf8ce32028cfd20d4277c07b7ae354', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2012-12-31 23:17:42');
+INSERT INTO `django_session` VALUES ('25cf8ce32028cfd20d4277c07b7ae354', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2014-12-31 23:17:42');
 INSERT INTO `django_session` VALUES ('28bb36b7177e872d3dd74a4678f096e5', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2013-01-06 00:15:05');
-INSERT INTO `django_session` VALUES ('2a9f7aed2c9b91308c9047dfa4b91ffc', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2012-12-24 19:11:27');
-INSERT INTO `django_session` VALUES ('557af2dbc8055cace195319bf63160a6', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2012-12-31 14:32:46');
-INSERT INTO `django_session` VALUES ('67452165b7d8efa23e52dcfb1a146993', 'NWRiOTI2OTQ3ODIxYTU3OGZhMGRiNmFlYWM0MmYzNWIxZjI5OWU5MzqAAn1xAShVDV9hdXRoX3Vz\nZXJfaWSKAQFVEl9hdXRoX3VzZXJfYmFja2VuZFUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxAnUu\n', '2012-12-24 21:11:51');
+INSERT INTO `django_session` VALUES ('2a9f7aed2c9b91308c9047dfa4b91ffc', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2014-12-24 19:11:27');
+INSERT INTO `django_session` VALUES ('557af2dbc8055cace195319bf63160a6', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2014-12-31 14:32:46');
+INSERT INTO `django_session` VALUES ('67452165b7d8efa23e52dcfb1a146993', 'NWRiOTI2OTQ3ODIxYTU3OGZhMGRiNmFlYWM0MmYzNWIxZjI5OWU5MzqAAn1xAShVDV9hdXRoX3Vz\nZXJfaWSKAQFVEl9hdXRoX3VzZXJfYmFja2VuZFUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxAnUu\n', '2014-12-24 21:11:51');
 INSERT INTO `django_session` VALUES ('8e36e3f3b459f0aa25ab60af96614cae', 'ZGM2MzFjZDFiZGM2MWFkMjBmZGY1NjAyNmE2ZGZiZGZhNDIyMmYzODqAAn1xAS4=\n', '2013-01-06 11:16:01');
-INSERT INTO `django_session` VALUES ('9eb769b87dfdae0baf26fd75fb41c15a', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2012-12-24 21:41:04');
+INSERT INTO `django_session` VALUES ('9eb769b87dfdae0baf26fd75fb41c15a', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2014-12-24 21:41:04');
 INSERT INTO `django_session` VALUES ('aadd8f0719cb1d2006dfa8e7ca9adafb', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2013-01-18 14:37:27');
-INSERT INTO `django_session` VALUES ('b30a94cfd066a3efe05eb674c017b9c6', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2012-12-25 00:10:48');
-INSERT INTO `django_session` VALUES ('b40950becdf9a0e127a7d71e70f6bf73', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2012-12-24 18:33:22');
-INSERT INTO `django_session` VALUES ('bd85cffc3d8bc15bc18ff804668bfe1c', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2012-12-24 11:17:48');
+INSERT INTO `django_session` VALUES ('b30a94cfd066a3efe05eb674c017b9c6', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2014-12-25 00:10:48');
+INSERT INTO `django_session` VALUES ('b40950becdf9a0e127a7d71e70f6bf73', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2014-12-24 18:33:22');
+INSERT INTO `django_session` VALUES ('bd85cffc3d8bc15bc18ff804668bfe1c', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2014-12-24 11:17:48');
 INSERT INTO `django_session` VALUES ('bec32181a58f03b7899172ff4dd66171', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2013-01-23 10:25:34');
 INSERT INTO `django_session` VALUES ('ccab94e9743df95805ac6eeed4c852e6', 'NWRiOTI2OTQ3ODIxYTU3OGZhMGRiNmFlYWM0MmYzNWIxZjI5OWU5MzqAAn1xAShVDV9hdXRoX3Vz\nZXJfaWSKAQFVEl9hdXRoX3VzZXJfYmFja2VuZFUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxAnUu\n', '2013-01-01 23:40:08');
 INSERT INTO `django_session` VALUES ('d3d9151f853cb053a11c54cda18a4963', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2013-02-02 09:41:42');
-INSERT INTO `django_session` VALUES ('d78f26e38024658ca796d1952b36d0a7', 'ZGM2MzFjZDFiZGM2MWFkMjBmZGY1NjAyNmE2ZGZiZGZhNDIyMmYzODqAAn1xAS4=\n', '2012-12-26 06:54:15');
+INSERT INTO `django_session` VALUES ('d78f26e38024658ca796d1952b36d0a7', 'ZGM2MzFjZDFiZGM2MWFkMjBmZGY1NjAyNmE2ZGZiZGZhNDIyMmYzODqAAn1xAS4=\n', '2014-12-26 06:54:15');
 INSERT INTO `django_session` VALUES ('f0f54559c4f4af1a15a6ca4ecbd16c0c', 'YWMxOTAyMTE4MTE3NTYzMWFhYmZlNTNiM2M1YTdhODNkNmFhOWRkMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n', '2013-01-06 09:16:57');
 INSERT INTO `django_session` VALUES ('f7e93ce64a321579329ec016581ea4c7', 'ZGM2MzFjZDFiZGM2MWFkMjBmZGY1NjAyNmE2ZGZiZGZhNDIyMmYzODqAAn1xAS4=\n', '2013-01-06 08:34:33');
 
@@ -774,30 +774,30 @@ CREATE TABLE `grade` (
 -- ----------------------------
 -- Records of grade
 -- ----------------------------
-INSERT INTO `grade` VALUES ('87', '2012年秋', '41', '72.38');
-INSERT INTO `grade` VALUES ('88', '2012年秋', '42', '82.64');
-INSERT INTO `grade` VALUES ('89', '2012年秋', '37', '84.34');
-INSERT INTO `grade` VALUES ('90', '2012年秋', '38', '88.25');
-INSERT INTO `grade` VALUES ('91', '2012年秋', '39', '81.45');
-INSERT INTO `grade` VALUES ('92', '2012年秋', '40', '84.12');
-INSERT INTO `grade` VALUES ('93', '2012年春', '41', '82.38');
-INSERT INTO `grade` VALUES ('94', '2012年春', '42', '72.64');
-INSERT INTO `grade` VALUES ('95', '2012年春', '37', '74.34');
-INSERT INTO `grade` VALUES ('96', '2012年春', '38', '68.25');
-INSERT INTO `grade` VALUES ('97', '2012年春', '39', '71.45');
-INSERT INTO `grade` VALUES ('98', '2012年春', '40', '64.12');
+INSERT INTO `grade` VALUES ('87', '2014Fall', '41', '72.38');
+INSERT INTO `grade` VALUES ('88', '2014Fall', '42', '82.64');
+INSERT INTO `grade` VALUES ('89', '2014Fall', '37', '84.34');
+INSERT INTO `grade` VALUES ('90', '2014Fall', '38', '88.25');
+INSERT INTO `grade` VALUES ('91', '2014Fall', '39', '81.45');
+INSERT INTO `grade` VALUES ('92', '2014Fall', '40', '84.12');
+INSERT INTO `grade` VALUES ('93', '2014年春', '41', '82.38');
+INSERT INTO `grade` VALUES ('94', '2014年春', '42', '72.64');
+INSERT INTO `grade` VALUES ('95', '2014年春', '37', '74.34');
+INSERT INTO `grade` VALUES ('96', '2014年春', '38', '68.25');
+INSERT INTO `grade` VALUES ('97', '2014年春', '39', '71.45');
+INSERT INTO `grade` VALUES ('98', '2014年春', '40', '64.12');
 INSERT INTO `grade` VALUES ('99', '2011年春', '41', '67.33');
 INSERT INTO `grade` VALUES ('100', '2011年春', '42', '72.64');
 INSERT INTO `grade` VALUES ('101', '2011年春', '37', '81.38');
 INSERT INTO `grade` VALUES ('102', '2011年春', '38', '77.89');
 INSERT INTO `grade` VALUES ('103', '2011年春', '39', '71.45');
 INSERT INTO `grade` VALUES ('104', '2011年春', '40', '84.12');
-INSERT INTO `grade` VALUES ('105', '2011年秋', '41', '88.12');
-INSERT INTO `grade` VALUES ('106', '2011年秋', '42', '67.35');
-INSERT INTO `grade` VALUES ('107', '2011年秋', '37', '65.58');
-INSERT INTO `grade` VALUES ('108', '2011年秋', '38', '76.89');
-INSERT INTO `grade` VALUES ('109', '2011年秋', '39', '66.82');
-INSERT INTO `grade` VALUES ('110', '2011年秋', '40', '74.12');
+INSERT INTO `grade` VALUES ('105', '2011Fall', '41', '88.12');
+INSERT INTO `grade` VALUES ('106', '2011Fall', '42', '67.35');
+INSERT INTO `grade` VALUES ('107', '2011Fall', '37', '65.58');
+INSERT INTO `grade` VALUES ('108', '2011Fall', '38', '76.89');
+INSERT INTO `grade` VALUES ('109', '2011Fall', '39', '66.82');
+INSERT INTO `grade` VALUES ('110', '2011Fall', '40', '74.12');
 
 -- ----------------------------
 -- Table structure for `south_migrationhistory`
@@ -814,12 +814,12 @@ CREATE TABLE `south_migrationhistory` (
 -- ----------------------------
 -- Records of south_migrationhistory
 -- ----------------------------
-INSERT INTO `south_migrationhistory` VALUES ('12', 'engine', '0001_initial', '2012-12-20 06:09:38');
-INSERT INTO `south_migrationhistory` VALUES ('13', 'captcha', '0001_initial', '2012-12-20 06:10:09');
-INSERT INTO `south_migrationhistory` VALUES ('14', 'engine', '0002_auto__del_field_comperformancescore_assessmentscore', '2012-12-20 06:11:29');
-INSERT INTO `south_migrationhistory` VALUES ('15', 'engine', '0003_auto__add_field_comperformancescore_assessmentscore', '2012-12-20 06:11:48');
-INSERT INTO `south_migrationhistory` VALUES ('16', 'engine', '0004_auto__chg_field_comperformancescore_score__chg_field_comperformancesco', '2012-12-20 06:14:29');
-INSERT INTO `south_migrationhistory` VALUES ('17', 'engine', '0005_auto__chg_field_comperformancedevelopmentscore_score__chg_field_comper', '2012-12-22 08:50:45');
+INSERT INTO `south_migrationhistory` VALUES ('12', 'engine', '0001_initial', '2014-12-20 06:09:38');
+INSERT INTO `south_migrationhistory` VALUES ('13', 'captcha', '0001_initial', '2014-12-20 06:10:09');
+INSERT INTO `south_migrationhistory` VALUES ('14', 'engine', '0002_auto__del_field_comperformancescore_assessmentscore', '2014-12-20 06:11:29');
+INSERT INTO `south_migrationhistory` VALUES ('15', 'engine', '0003_auto__add_field_comperformancescore_assessmentscore', '2014-12-20 06:11:48');
+INSERT INTO `south_migrationhistory` VALUES ('16', 'engine', '0004_auto__chg_field_comperformancescore_score__chg_field_comperformancesco', '2014-12-20 06:14:29');
+INSERT INTO `south_migrationhistory` VALUES ('17', 'engine', '0005_auto__chg_field_comperformancedevelopmentscore_score__chg_field_comper', '2014-12-22 08:50:45');
 
 -- ----------------------------
 -- Table structure for `student`

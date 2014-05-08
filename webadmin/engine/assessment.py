@@ -224,7 +224,7 @@ def go_assessments_list(request):
     iTotalRecords = iTotalDisplayRecords = assessmentrecords.count() #总共的rows数
     assessmentrecords = assessmentrecords[startRecord:endRecord]
 
-#注意此时：不能使用unicode(dict(EVALUATE_CHOICES)[i.result])
+#Attention :此时：不能使用unicode(dict(EVALUATE_CHOICES)[i.result])
     aaData = [[unicode(i.assessment.term),unicode(i.dstudent.realname),unicode(i.dstudent.user.username),dict(SEX_CHOICES)[i.dstudent.sex],dict(EVALUATE_CHOICES)[i.result]] for i in assessmentrecords]
 
     response_dict = {}
@@ -265,7 +265,7 @@ def go_assessments(request):
             #目前已经含有的相应评价的个数
             hasresults = AssessmentRecord.objects.filter(ostudent=request.user.student).filter(outputQ).filter(assessment__term = term.encode('utf-8')).filter(result=dict([[i[1],i[0]] for i in EVALUATE_CHOICES])[result.encode('utf-8')]).count()
 
-            #获取班级同学总数
+            #获取ClassStudent总数
             studentnum = User.objects.get(username = username).student.theclass.student_set.count()
             
             assessmentrow = AssessmentRow.objects.get(student=User.objects.get(username = username).student)

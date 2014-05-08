@@ -2,15 +2,14 @@
 #-*-coding:utf-8-*-
 
 from django.forms.fields import Field,CharField
-from validators import username,password,classid,classname,studentid,\
-    studentname,term
+from validators import username,password,classid,classname,studentid,studentname,term
 
 class UsernameField(CharField):
     default_error_messages = {
-        'invalid':u'学生:您的学号,管理员:6-12位,由字母数字下划线组成,首字母为字母',
-        'required':u'用户名必须要填(学生:您的学号,管理员:6-12位,由字母数字下划线组成,首字母为字母)',
-        'max_length':u'管理员用户名至多为12位',
-        'min_length':u'管理员用户名至少为6位'
+        'invalid':u'Student: your student ID; Admin: 6-12 digits. (numbers, letters, and underscore.)',
+        'required':u'Required(Student: your student ID; Admin: 6-12 digits. (numbers, letters, and underscore.))',
+        'max_length':u'Maximum digits: 12',
+        'min_length':u'Minimum digits: 6'
     }
     default_validators = [username]
 
@@ -20,17 +19,17 @@ class UsernameField(CharField):
 
 class PasswordField(CharField):
     default_error_messages = {
-        'invalid':u'密码由字母数字下划线组成的字符串，最少为8位',
-        'required':u'密码必须要填(由字母数字下划线组成的字符串，最少为6位)',
-        'max_length':u'密码至多为16位',
-        'min_length':u'密码至少为8位'
+        'invalid':u'password由字母数字下划线组成的字符串，最少为8位',
+        'required':u'password必须要填(由字母数字下划线组成的字符串，最少为6位)',
+        'max_length':u'password至多为16位',
+        'min_length':u'password至少为8位'
     }
     default_validators = [password]
 
 class ClassnameField(CharField):
     default_error_messages = {
-        'invalid':u'班级姓名必须是2-6个汉字',
-        'required':u'班级姓名必须要填（2-6个汉字）',
+        'invalid':u'ClassName必须是2-6个汉字',
+        'required':u'ClassName必须要填（2-6个汉字）',
     }
     default_validators = [classname]
 
@@ -40,8 +39,8 @@ class ClassnameField(CharField):
 
 class ClassidField(CharField):
     default_error_messages = {
-        'invalid':u'班号由7位数数字组成',
-        'required':u'班号必须要填(7位数数字)',
+        'invalid':u'Class ID Form with 7 digit numbers',
+        'required':u'Class ID必须要填(7位数数字)',
     }
     default_validators = [classid]
 
@@ -51,8 +50,8 @@ class ClassidField(CharField):
         
 class StudentidField(CharField):
     default_error_messages = {
-        'invalid':u'学号由9位数数字组成',
-        'required':u'学号必须要填(9位数数字)',
+        'invalid':u'Student ID由9位数数字组成',
+        'required':u'Student ID必须要填(9位数数字)',
     }
     default_validators = [studentid]
 
@@ -62,8 +61,8 @@ class StudentidField(CharField):
         
 class StudentnameField(CharField):
     default_error_messages = {
-        'invalid':u'同学姓名必须是2-4个汉字',
-        'required':u'同学姓名必须要填（2-4个汉字）',
+        'invalid':u'StudentName必须是2-4个汉字',
+        'required':u'StudentName必须要填（2-4个汉字）',
     }
     default_validators = [studentname]
 
@@ -73,7 +72,7 @@ class StudentnameField(CharField):
         
 class TermField(CharField):
     default_error_messages = {
-        'invalid':u'要按照(2012年秋)格式填',
+        'invalid':u'要按照(2014Fall)格式填',
         'required':u'学期必须填',
     }
     default_validators = [term]

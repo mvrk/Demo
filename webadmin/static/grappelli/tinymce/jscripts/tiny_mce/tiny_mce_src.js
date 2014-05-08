@@ -7,7 +7,7 @@
 
 		minorVersion : '5b2',
 
-		releaseDate : '2012-03-15',
+		releaseDate : '2014-03-15',
 
 		_init : function() {
 			var t = this, d = document, na = navigator, ua = na.userAgent, i, nl, n, base, p, v;
